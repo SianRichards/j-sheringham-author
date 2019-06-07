@@ -14,12 +14,12 @@ class Nav extends React.Component<IProps, IState> {
     // state = { :  }
     render() { 
         return ( <nav className={styles.navbar}>
-            <Link to="/">Home</Link>
-            <Link to="/daniel">Daniel</Link>
-            <Link to="/from-inside">From Inside</Link>
-            <Link to="/my-detective-darling">My Detective Darling</Link>
-            <Link to="/jonah">Jonah</Link>
-            <Link to="/contact-us">Contact Us</Link>
+            <Link to="/" className={styles.link}>Home</Link>
+            <Link to="/daniel" className={styles.link}>Daniel</Link>
+            <Link to="/from-inside" className={styles.link}>From Inside</Link>
+            <Link to="/my-detective-darling" className={styles.link}>My Detective Darling</Link>
+            <Link to="/jonah" className={styles.link}>Jonah</Link>
+            <Link to="/contact-us" className={styles.link}>Contact Us</Link>
         </nav> );
     }
 }
