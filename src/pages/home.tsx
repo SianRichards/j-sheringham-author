@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from "./home.module.scss";
-import Header from "./header";
-import Footer from "./footer"
+import Header from "../components/header";
+import Footer from "../components/footer"
 
 export interface IProps {
     

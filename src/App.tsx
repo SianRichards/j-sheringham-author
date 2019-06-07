@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Home from "./components/home";
+import Home from "./pages/home";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-import Daniel from "./components/daniel";
-import FromInside from "./components/frominside";
-import MyDet from "./components/mydet";
-import Jonah from "./components/jonah";
+import Daniel from "./pages/daniel";
+import FromInside from "./pages/frominside";
+import MyDet from "./pages/mydet";
+import Jonah from "./pages/jonah";
 
 const App: React.FC = () => {
   return (
