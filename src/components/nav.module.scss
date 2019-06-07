@@ -1,11 +1,13 @@
 .navbar {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-size: 35px;
     height: 80px;
     display: flex;
+    border-bottom: solid 1px black;
     li {
-        border-bottom: solid 1px black;
+        
         width: 16.666%;
         height: 100%;
         margin-top: 0px;
