@@ -2,9 +2,39 @@
     height: 1000px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 0px;
     padding: 0px;
     border-bottom: solid 1px black;
     background-color: white;
+    .description {
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+        width: 600px;
+        height: auto;
+        font-size: 26px;
+        h2 {
+            margin: 0px;
+        }
+        button {
+            width: 300px;
+            margin: 15px;
+            height: auto;
+            font-size: 30px;
+            &:hover {
+                cursor: pointer;
+                background-color: #EBDED8;
+            }
+            
+    
+    }
+    }
+    img {
+        width: 550px;
+        height: auto;
+    
+    }
 }

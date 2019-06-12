@@ -19,7 +19,7 @@ class Nav extends React.Component<IProps, IState> {
             <Link to="/from-inside" className={styles.link}>From Inside</Link>
             <Link to="/my-detective-darling" className={styles.link}>My Detective Darling</Link>
             <Link to="/jonah" className={styles.link}>Jonah</Link>
-            <Link to="/contact-us" className={styles.link}>Contact Us</Link>
+            <Link to="/contact" className={styles.link}>Contact</Link>
         </nav> );
     }
 }

@@ -1,0 +1,47 @@
+.main {
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        border-bottom: solid 1px black;
+        background-color: white;
+        form {
+h1 {
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+            display: flex;
+            flex-direction: column;
+            font-size: 35px;
+            input {
+                display: flex;
+                height: 35px;
+            width: 700px;
+            font-size: 35px;
+            
+            
+            }
+            .message {
+                height: 200px;
+                display: flex;
+                justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            }
+            .submit {
+                    width: 300px;
+                    margin: 15px;
+                    height: auto;
+                    font-size: 30px;
+                    margin-bottom: 80px;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #EBDED8;
+                    }
+            }
+        }
+}

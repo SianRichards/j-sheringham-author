@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     font-size: 35px;
-    height: 80px;
+    height: 60px;
     display: flex;
     border-bottom: solid 1px black;
     text-decoration: none;
@@ -17,10 +17,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-right: 1px solid black;
         &:hover {
             cursor: pointer;
             background-color: #EBDED8;
         }
-        
+        &:active {
+font-weight: bold;
+        }
     }
 }
