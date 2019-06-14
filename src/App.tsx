@@ -7,6 +7,7 @@ import FromInside from "./pages/frominside";
 import MyDet from "./pages/mydet";
 import Jonah from "./pages/jonah";
 import Contact from "./pages/contact";
+import About from './pages/about';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
     <BrowserRouter>
     <Switch>
     <Route exact path="/" component={Home} />
+    <Route exact path="/about" component={About} />
     <Route exact path="/daniel" component={Daniel} />
     <Route exact path="/from-inside" component={FromInside} />
     <Route exact path="/my-detective-darling" component={MyDet} />

@@ -1,0 +1,25 @@
+.main {
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: solid 1px black;
+    background: url("../static/images/brickwall.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .bio { font-size: 28px;
+    width: 60%;
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.5));
+    border-radius: 15px;}
+img {
+    height: 800px;
+    width: auto;
+    border-radius: 30px;
+
+}}

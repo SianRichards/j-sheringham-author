@@ -15,6 +15,7 @@ class Nav extends React.Component<IProps, IState> {
     render() { 
         return ( <nav className={styles.navbar}>
             <Link to="/" className={styles.link}>Home</Link>
+            <Link to="/about" className={styles.link}>About</Link>
             <Link to="/daniel" className={styles.link}>Daniel</Link>
             <Link to="/from-inside" className={styles.link}>From Inside</Link>
             <Link to="/my-detective-darling" className={styles.link}>My Detective Darling</Link>

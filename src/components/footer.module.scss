@@ -1,7 +1,12 @@
 .footer {
-    background-color:rgb(161, 194, 222);
+    background: linear-gradient(to right, rgb(161, 194, 222), white, rgb(161, 194, 222)); 
     height: 50px;
     margin: 0px;
     padding: 0px;
     font-size: 20px;
+    margin-top: 0px;
+    padding: 0px;
+    p {
+        margin: 0px;
+    }
     }
