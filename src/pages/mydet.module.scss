@@ -1,5 +1,5 @@
 .myDet {
-    height: 1000px;
+    height: 1200px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -7,7 +7,7 @@
     margin: 0px;
     padding: 0px;
     border-bottom: solid 1px black;
-    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.5)), url("../static/images/footsand.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.5)), url("../static/images/sanddunes.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -45,6 +45,7 @@
     img {
         width: 550px;
         height: auto;
+        border: 5px solid black;
     
     }
 }

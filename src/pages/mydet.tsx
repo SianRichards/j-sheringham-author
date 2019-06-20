@@ -34,7 +34,7 @@ Whose story no one knows."</p>
 
 
 <p>The To-Be-Forgotten by Thomas Hardy.</p>
-<button>Order Here</button>
+<a href='https://www.amazon.co.uk/My-Detective-Darling-jo-sheringham-ebook/dp/B01KCHV4S2/ref=pd_sbs_351_2/259-9137129-8314455?_encoding=UTF8&pd_rd_i=B01KCHV4S2&pd_rd_r=fd928360-9343-11e9-8998-4ffa3448a792&pd_rd_w=GLk1d&pd_rd_wg=3hAZM&pf_rd_p=18edf98b-139a-41ee-bb40-d725dd59d1d3&pf_rd_r=HPRZ0AS7SZXN789696G4&psc=1&refRID=HPRZ0AS7SZXN789696G4' target="_blank"><button>Order Here</button></a>
 </div>
             <img src={MyDetective} />
         </article> 
