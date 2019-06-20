@@ -51,7 +51,7 @@ class Contact extends React.Component<IProps, IState> {
         <h2>Alternatively, you can find me on <a href="https://www.facebook.com/sheringhambooks/Facebook" target="_blank">Facebook</a></h2>
         </div>
         <div>
-        <img src={JoSheringham} />
+        <img src={JoSheringham} alt="The author Jo Sheringham at a book signing"/>
         </div>
         {/* <form onSubmit={this.handleSubmit}><h1>Contact</h1> <label>Your name: <input type="text" name="userName" onChange={this.handleChange}/></label>
         <label>Contact number: <input type="text" name="contactNo" onChange={this.handleChange}/></label>

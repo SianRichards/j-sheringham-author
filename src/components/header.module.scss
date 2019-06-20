@@ -11,10 +11,14 @@
         display: flex;
         justify-content: space-evenly;
         .icons {
-            height: 50px;
+            height: 55px;
             width: auto;
             color: black;
             margin:15px;
+            &:hover {
+                cursor: pointer;
+                color: orange;
+            }
         }
     }
  .title {
