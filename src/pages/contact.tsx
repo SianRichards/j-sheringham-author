@@ -46,9 +46,9 @@ class Contact extends React.Component<IProps, IState> {
 
 
     render() { 
-        return ( <React.Fragment> <Header /><article className={styles.main}><div>
-        <h1>For all enquiries, please contact Jo Sheringham via jo@sheringhambooks.com</h1>
-        <h2>Alternatively, you can find me on Facebook</h2>
+        return ( <React.Fragment> <Header /><article className={styles.main}><div className={styles.contact}>
+        <h1>For all enquiries, please contact Jo Sheringham via <a href="mailto:jo@sheringhambooks.com">jo@sheringhambooks.com</a></h1>
+        <h2>Alternatively, you can find me on <a href="https://www.facebook.com/sheringhambooks/Facebook" target="_blank">Facebook</a></h2>
         </div>
         <div>
         <img src={JoSheringham} />

@@ -8,9 +8,15 @@ import FromInsideImg from "../static/images/fromInside.jpg";
 import MyDetectiveDarlingImg from "../static/images/mydd.jpg";
 import {Link} from "react-router-dom";
 import Jonah from "./jonah";
+import Daniel from "./daniel";
+import FromInside from "./frominside";
+import MyDet from "./mydet";
+import About from "./about";
+import Button from "../components/button";
 
 
 export interface IProps {
+    title: string;
     
 }
  
@@ -25,18 +31,17 @@ class Home extends React.Component<IProps, IState> {
         <div className={styles.worksection}>
         <h1>Works</h1>
         <div className={styles.works}>
-<img src={JonahImg} className={styles.img1}/>
-<img src={DanielImg} className={styles.img2}/>
-<img src={FromInsideImg} className={styles.img3}/>
-<img src={MyDetectiveDarlingImg} className={styles.img4} />
+        <Link to="/jonah" className={styles.link}><img src={JonahImg} className={styles.img1}/></Link>
+        <Link to="/daniel" className={styles.link}><img src={DanielImg} className={styles.img2}/></Link>
+        <Link to="/from-inside" className={styles.link}><img src={FromInsideImg} className={styles.img3}/></Link>
+        <Link to="/my-detective-darling" className={styles.link}><img src={MyDetectiveDarlingImg} className={styles.img4} /></Link>
                     </div>
                     </div>
         <div className={styles.homeinfo}>
-            <h2>Available Now</h2>
-            <button>Order Here</button>
+            <h2>All Works Available Now</h2>
             <h3> Jo Sheringham writes stories which allow the extraordinary to stand out from the ordinary whilst celebrating both. </h3>
+            <Link to="/about"><Button title="Learn More"/></Link>
             
-            <Link to="/jonah" className={styles.link}>Learn More</Link>
             </div>
         </article> 
         <Footer />

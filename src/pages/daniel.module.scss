@@ -13,12 +13,14 @@
     -o-background-size: cover;
     background-size: cover; 
     .description {
-        background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.5));
+        background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5));
         border-radius: 15px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 950px;
-        height: auto;
+        height: 1037px;
         font-size: 26px;
         h2 {
 margin-bottom: 5px;
