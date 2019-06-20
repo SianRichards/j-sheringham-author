@@ -1,12 +1,25 @@
 .header {
     background: linear-gradient(to right, rgb(161, 194, 222), white, rgb(161, 194, 222)); 
     border: solid 1px black;
-    height: 220px;
+    height: 260px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     font-family: 'Nothing You Could Do', cursive;
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        .icons {
+            height: 50px;
+            width: auto;
+            color: black;
+            margin:15px;
+        }
+    }
  .title {
      font-size: 120px;
+         margin: 0px;
  };
+
 }
