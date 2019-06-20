@@ -38,7 +38,6 @@ class Home extends React.Component<IProps, IState> {
                     </div>
                     </div>
         <div className={styles.homeinfo}>
-            <h2>All Works Available Now</h2>
             <h3> Jo Sheringham writes stories which allow the extraordinary to stand out from the ordinary whilst celebrating both. </h3>
             <Link to="/about"><Button title="Learn More"/></Link>
             
