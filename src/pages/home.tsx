@@ -29,7 +29,7 @@ class Home extends React.Component<IProps, IState> {
     render() { 
         return ( <React.Fragment> <Header /><article className={styles.home}>
         <div className={styles.worksection}>
-        <h1>Works</h1>
+        <h1>Author's Works</h1>
         <div className={styles.works}>
         <Link to="/jonah" className={styles.link}><img src={JonahImg} className={styles.img1}/></Link>
         <Link to="/daniel" className={styles.link}><img src={DanielImg} className={styles.img2}/></Link>
