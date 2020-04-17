@@ -1,29 +1,103 @@
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 35px;
-    height: 60px;
-    display: flex;
-    border-bottom: solid 1px black;
+  display: table;
+  border-bottom: solid 1px black;
+  width: 100%;
+  text-decoration: none;
+  background-color: rgb(216, 229, 235);
+  .bars {
+    display: none;
+  }
+  .unclickedLink {
+    vertical-align: middle;
+    color: black;
+    border: 0.5px solid black;
+    display: table-cell;
     text-decoration: none;
-    background-color: rgb(216, 229, 235);
-    .link {
-        color: black;
-        text-decoration: none;
-        width: 16.666%;
-        height: 100%;
-        margin-top: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-right: 1px solid black;
-        &:hover {
-            cursor: pointer;
-            background-color:  rgb(233, 192, 159);
-        }
-        &:active {
-font-weight: bold;
-        }
+    width: 14.28%;
+    padding: 5px;
+    &:hover {
+      cursor: pointer;
+      background-color: #ebded8;
     }
+    &:active {
+      font-weight: bold;
+    }
+  }
+  .clickedLink {
+    vertical-align: middle;
+    background-color: #ebded8;
+    color: black;
+    border: 0.5px solid black;
+    display: table-cell;
+    text-decoration: none;
+    width: 14.28%;
+    padding: 0 10px 0 10px;
+    &:active {
+      font-weight: bold;
+    }
+  }
+}
+
+.topbar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px black;
+  width: 100%;
+  text-decoration: none;
+  background-color: rgb(216, 229, 235);
+  .bars {
+    margin: 10px;
+  }
+  .clickedLink {
+    background-color: #ebded8;
+    color: black;
+    border-bottom: 0.5px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    width: auto;
+    height: 45px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:active {
+      font-weight: bolder;
+    }
+  }
+  .unclickedLink {
+    background-color: #7699aa;
+    color: black;
+    border-bottom: 0.5px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    width: auto;
+    height: 45px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:active {
+      font-weight: bolder;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .navbar {
+    background-color: rgb(216, 229, 235);
+    display: flex;
+    .bars {
+      display: flex;
+      justify-content: center;
+      margin: 13px;
+      width: 100%;
+    }
+    .unclickedLink {
+      display: none;
+    }
+    .clickedLink {
+      display: none;
+    }
+  }
 }

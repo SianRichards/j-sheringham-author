@@ -4,13 +4,7 @@ import styles from "./button.module.scss";
 export interface IProps {
     title: string;
 }
- 
-export interface IState {
-    
-}
- 
-class Button extends React.Component<IProps, IState> {
-    // state = { :  }
+class Button extends React.Component<IProps> {
     render() { 
         return ( <button className={styles.button} >{this.props.title}</button> );
     }

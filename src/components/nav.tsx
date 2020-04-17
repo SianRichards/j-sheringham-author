@@ -1,28 +1,44 @@
 import * as React from 'react';
 import styles from "./nav.module.scss"
-import {Link} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export interface IProps {
-    
+interface IProps {
+
 }
- 
-export interface IState {
-    
+
+interface IState {
+    active: string;
+    barsClicked: Boolean;
 }
- 
 class Nav extends React.Component<IProps, IState> {
-    // state = { :  }
-    render() { 
-        return ( <nav className={styles.navbar}>
-            <Link to="/" className={styles.link}>Home</Link>
-            <Link to="/about" className={styles.link}>About</Link>
-            <Link to="/daniel" className={styles.link}>Daniel</Link>
-            <Link to="/from-inside" className={styles.link}>From Inside</Link>
-            <Link to="/my-detective-darling" className={styles.link}>My Detective Darling</Link>
-            <Link to="/jonah" className={styles.link}>Jonah</Link>
-            <Link to="/contact" className={styles.link}>Contact</Link>
-        </nav> );
+    public state = { active: '', barsClicked: false }
+
+    handleLinkClick = (event: any) => {
+        this.setState({ active: event.currentTarget.innerHTML, barsClicked: false })
+    }
+
+    handleBarsClick = () => {
+        this.setState({ barsClicked: !this.state.barsClicked })
+    }
+
+    render() {
+        return (<nav>
+            <tr className={ this.state.barsClicked ? styles.topbar : styles.navbar}>
+                <span onClick={this.handleBarsClick} className={styles.bars}>
+                    <FontAwesomeIcon icon={faBars}/>
+                </span>
+                <NavLink onClick={this.handleLinkClick} to="/home" className={this.state.active === 'Home' ? styles.clickedLink : styles.unclickedLink}>Home</NavLink>
+                <NavLink onClick={this.handleLinkClick} to="/about" className={this.state.active === 'About' ? styles.clickedLink : styles.unclickedLink}>About</NavLink>
+                <NavLink onClick={this.handleLinkClick} to="/daniel" className={this.state.active === 'Daniel' ? styles.clickedLink : styles.unclickedLink}>Daniel</NavLink>
+                <NavLink onClick={this.handleLinkClick} to="/from-inside" className={this.state.active === 'From Inside' ? styles.clickedLink : styles.unclickedLink}>From Inside</NavLink>
+                <NavLink onClick={this.handleLinkClick} to="/my-detective-darling" className={this.state.active === 'My Detective Darling' ? styles.clickedLink : styles.unclickedLink}>My Detective Darling</NavLink>
+                <NavLink onClick={this.handleLinkClick} to="/jonah" className={this.state.active === 'Jonah' ? styles.clickedLink : styles.unclickedLink}>Jonah</NavLink>
+                <NavLink onClick={this.handleLinkClick} to="/contact" className={this.state.active === 'Contact' ? styles.clickedLink : styles.unclickedLink}>Contact</NavLink>
+            </tr>
+        </nav>);
     }
 }
- 
+
 export default Nav;

@@ -1,22 +1,18 @@
 .footer {
-    background: linear-gradient(to right, rgb(161, 194, 222), white, rgb(161, 194, 222)); 
-    height: 80px;
-    margin-bottom: 0px;
-    padding: 0px;
-    font-size: 20px;
-    margin-top: 0px;
-    padding: 0px;
-    // display: flex;
-    // align-content: center;
-    // justify-content: center;
+  background: linear-gradient(
+    to right,
+    rgb(161, 194, 222),
+    white,
+    rgb(161, 194, 222)
+  );
+  height: auto;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+  p {
+    margin: 0;
     text-align: center;
-    // padding: 0px;
     vertical-align: middle;
-    p {
-        margin: 0px;
-        text-align: center;
-        padding-top: 25px;
-        vertical-align: middle;
-        // height: 100%;
-    }
-    }
+    padding: 5px;
+  }
+}
