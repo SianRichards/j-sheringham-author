@@ -1,11 +1,15 @@
 import * as React from 'react';
 import styles from "./header.module.scss";
 import Nav from "./nav";
+import { RouteComponentProps } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
  
-class Header extends React.Component {
+interface IProps {
+    history: RouteComponentProps;
+}
+class Header extends React.Component<IProps> {
     render() { 
         return ( <React.Fragment>
             <header className={styles.header}>
@@ -26,7 +30,7 @@ class Header extends React.Component {
                     </h1>
                 </div>
             </header>
-        <Nav />
+        <Nav history={this.props.history}/>
         </React.Fragment>);
     }
 }

@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: space-evenly;
   border-bottom: solid 1px black;
-  background: url("../static/images/brickwall.jpg") no-repeat center center fixed;
+  background: url("../static/images/brickwall.jpg") repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,7 +27,6 @@
       grid-row: auto auto;
       grid-row-gap: 40px;
       justify-items: center;
-
       img {
         object-fit: scale-down;
         height: 300px;
@@ -39,28 +39,36 @@
     }
   }
 }
-.homeinfo {
+.homeInfo {
   font-size: 30px;
-  .link {
-    width: 300px;
-    margin: 15px;
-    height: auto;
-    font-size: 30px;
-    margin-bottom: 80px;
-    border: solid 0.5px grey;
-    text-decoration: none;
-    &:hover {
-      cursor: pointer;
-      background-color: #ebded8;
-    }
-    &:visited {
-      color: black;
+  .authorInfo {
+    font-weight: bold;
+    width: 600px;
+    font-size: 25px;
+    margin: 25px;
+    h3 {
+      margin: 15px;
     }
   }
-  h3 {
-    font-weight: lighter;
-    width: 600px;
-    font-size: 30px;
+  .upcomingBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    img {
+      object-fit: scale-down;
+      height: 300px;
+      margin: 15px;
+      &:hover {
+        box-shadow: 0 0 15px 10px grey;
+        background-size: cover;
+        transform: scale(1.1);
+      }
+    }
+    h3 {
+      font-size: 20px;
+      width: 200px;
+    }
   }
 }
 
@@ -69,6 +77,7 @@
     height: 100%;
     width: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     border-bottom: solid 1px black;
@@ -94,39 +103,38 @@
         grid-row: auto auto;
         grid-row-gap: 40px;
         justify-items: center;
-
-        img {
-          object-fit: scale-down;
-          height: 300px;
-          &:hover {
-            box-shadow: 0 0 15px 10px grey;
-            transform: scale(1.1);
+      }
+    }
+        .homeInfo {
+          font-size: 30px;
+          .authorInfo {
+            font-weight: bold;
+            width: 600px;
+            font-size: 25px;
+            margin: 25px;
+            h3 {
+              margin: 15px;
+            }
+          }
+          .upcomingBook {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+            img {
+              object-fit: scale-down;
+              height: 300px;
+              margin: 15px;
+            }
+            h3 {
+              font-size: 20px;
+              width: 300px;
+            }
           }
         }
       }
     }
-  }
-  .homeinfo {
-    font-size: 30px;
-    .link {
-      width: 300px;
-      margin: 15px;
-      height: auto;
-      font-size: 30px;
-      margin-bottom: 80px;
-      border: solid 0.5px grey;
-      text-decoration: none;
-      &:visited {
-        color: black;
-      }
-    }
-    h3 {
-      font-weight: lighter;
-      width: 400px;
-      font-size: 30px;
-    }
-  }
-}
+        
 @media (min-width: 750px) and (max-width: 1022px) {
   .home {
     height: 100%;
@@ -156,6 +164,7 @@
   .home {
     height: 100%;
     width: auto;
+    display: flex;
     flex-direction: column;
     .worksection {
       padding: 40px;
@@ -168,11 +177,36 @@
         }
       }
     }
-    .homeinfo {
-      h3 {
-        width: 300px;
-        font-size: 20px;
+    .homeInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+          .authorInfo {
+            font-weight: bold;
+            width: auto;
+            font-size: 15px;
+            margin: 25px;
+            h3 {
+              margin: 15px;
+            }
+          }
+          .upcomingBook {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+            img {
+              object-fit: scale-down;
+              height: 200px;
+              margin: 15px;
+            }
+            h3 {
+              font-size: 16px;
+              width: auto;
+            }
+          }
+        }
       }
     }
-  }
-}
