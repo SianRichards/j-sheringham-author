@@ -1,6 +1,7 @@
 .home {
-  height: 767px;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -21,6 +22,7 @@
       margin: 0 0 15px 0;
     }
     .works {
+      object-fit: scale-down;
       display: grid;
       grid-template-columns: 250px 250px;
       grid-column: 1fr 1fr;
@@ -29,7 +31,8 @@
       justify-items: center;
       img {
         object-fit: scale-down;
-        height: 300px;
+        height: auto;
+        max-height: 275px;
         &:hover {
           box-shadow: 0 0 15px 10px grey;
           background-size: cover;
@@ -57,7 +60,7 @@
     margin: 25px;
     img {
       object-fit: scale-down;
-      height: 300px;
+      max-height: 270px;
       margin: 15px;
       &:hover {
         box-shadow: 0 0 15px 10px grey;

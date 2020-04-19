@@ -1,15 +1,16 @@
 .navbar {
   display: table;
   border-bottom: solid 1px black;
-  width: 100%;
+  width: 100vw;
   text-decoration: none;
-  background-color: rgb(216, 229, 235);
+  background-color: white;
   .bars {
     display: none;
   }
   .unclickedLink {
     vertical-align: middle;
     color: black;
+    background-color: rgb(88, 172, 197);
     border: 0.5px solid black;
     display: table-cell;
     text-decoration: none;
@@ -17,7 +18,7 @@
     padding: 5px;
     &:hover {
       cursor: pointer;
-      background-color: #ebded8;
+      background-color: white;
     }
     &:active {
       font-weight: bold;
@@ -25,7 +26,7 @@
   }
   .clickedLink {
     vertical-align: middle;
-    background-color: #ebded8;
+    background-color: white;
     color: black;
     border: 0.5px solid black;
     display: table-cell;

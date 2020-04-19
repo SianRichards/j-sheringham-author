@@ -1,20 +1,19 @@
 .App {
   text-align: center;
-  background-color:rgb(161, 194, 222);
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
 @media(min-width: 1023px) and (max-width: 1029px){
   .App {
-    width: auto;
+    width: 100vw;
     height: auto;
   }
 }
 
 @media(min-width: 320px) and (max-width: 450px){ 
   .App {
-    width: auto;
+    width: 100vw;
     height: auto;
   }
 }

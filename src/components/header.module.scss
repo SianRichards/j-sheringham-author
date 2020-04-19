@@ -1,20 +1,22 @@
 .header {
-    background: linear-gradient(to right, rgb(161, 194, 222), white, rgb(161, 194, 222)); 
+    background-color: #ffa500;
+    color: white;
     border: solid 1px black;
+    box-sizing: border-box;
     height: 150px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-family: 'Nothing You Could Do', cursive;
-    width: 100%;
+    width: 100vw;
     .links {
         display: flex;
         justify-content: space-evenly;
         .icons {
             height: 25px;
             width: auto;
-            color: black;
+            color: white;
             margin: 15px 15px 0 15px;
             &:hover {
                 cursor: pointer;

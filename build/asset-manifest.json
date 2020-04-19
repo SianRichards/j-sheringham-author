@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.16ceb247.chunk.css",
+    "main.js": "/static/js/main.a30dfbc0.chunk.js",
+    "main.js.map": "/static/js/main.a30dfbc0.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.7517077d.chunk.js": "/static/js/2.7517077d.chunk.js",
+    "static/js/2.7517077d.chunk.js.map": "/static/js/2.7517077d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.afc63abc65b2db605898522240125379.js": "/precache-manifest.afc63abc65b2db605898522240125379.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.16ceb247.chunk.css.map": "/static/css/main.16ceb247.chunk.css.map",
+    "static/media/aboutportrait.jpg": "/static/media/aboutportrait.fc7386be.jpg",
+    "static/media/daniel.module.scss": "/static/media/arcticice.07675a02.jpg",
+    "static/media/pageNotFound.module.scss": "/static/media/brickwall.701297db.jpg",
+    "static/media/frominside.module.scss": "/static/media/carengine.714af5b5.jpg",
+    "static/media/daniel.jpg": "/static/media/daniel.8b09535c.jpg",
+    "static/media/fromInside.jpg": "/static/media/fromInside.4f8e2f40.jpg",
+    "static/media/jonah.jpg": "/static/media/jonah.bc82787e.jpg",
+    "static/media/josheringham.jpg": "/static/media/josheringham.941eb751.jpg",
+    "static/media/mydd.jpg": "/static/media/mydd.cccf3690.jpg",
+    "static/media/mydet.module.scss": "/static/media/sanddunes.6135f857.jpg",
+    "static/media/jonah.module.scss": "/static/media/space.6ae8b669.jpg",
+    "static/media/tale_of_two_prophets.jpg": "/static/media/tale_of_two_prophets.a7fc5fa2.jpg"
+  }
+}
