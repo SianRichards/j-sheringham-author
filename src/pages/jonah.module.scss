@@ -15,36 +15,35 @@
   -o-background-size: cover;
   background-size: cover;
   .description {
-    background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    );
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 700px;
-    max-height: 740px;
-    font-size: 20px;
-    padding: 15px;
-    margin: 15px;
-    h2 {
-      margin: 0px;
+    h1 {
+      margin: 0;
     }
+    font-size: 16px;
+    margin: 0 20px 0 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid black;
+    border-radius: 15px;
+    width: auto;
+    max-width: 650px;
   }
   .imageAndButton {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:  center;
     img {
       object-fit: scale-down;
-      height: 500px;
-      margin: 15px;
+      box-sizing: border-box;
+      height: 380px;
+      border: 1px solid black;
+      margin-bottom: 25px;
     }
   }
   iframe {
-    margin: 15px;
+    margin-right: 25px;
+    width: auto;
+    height: 250px;
+    object-fit: scale-down;
   }
 }
 

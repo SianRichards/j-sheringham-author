@@ -33,6 +33,7 @@
         object-fit: scale-down;
         height: auto;
         max-height: 275px;
+        border: 1px solid black;
         &:hover {
           box-shadow: 0 0 15px 10px grey;
           background-size: cover;
@@ -62,6 +63,7 @@
       object-fit: scale-down;
       max-height: 270px;
       margin: 15px;
+      border: 1px solid black;
       &:hover {
         box-shadow: 0 0 15px 10px grey;
         background-size: cover;

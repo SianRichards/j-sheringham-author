@@ -14,7 +14,7 @@ class Jonah extends React.Component {
                     </a>
                 </div>
                 <div className={styles.description}>
-                    <h2>Jonah</h2>
+                    <h1>Jonah</h1>
                     <p>
                         Daunted by the post from a message-bot who won’t take ‘no’ for an answer, semi-retired prophet Jonah rushes off for a last-minute city break on planet Tarshish.
                         But his galaxy-traversing escape plan shudders to a halt aboard the haulage cruiser Sheol II.
@@ -23,7 +23,7 @@ class Jonah extends React.Component {
                         Can Jonah save the ship’s crew from calamity? And will he finally face up to God’s call and embrace the role of a prophet in one last adventure?
                     </p>
                 </div>
-                <iframe width="400" height="400"
+                <iframe
                     src="https://www.youtube.com/embed/H0I36z0UzNY" title="Interview with Jo Sheringham about her book Jonah" allowFullScreen frameBorder="0">
                 </iframe>
             </article>

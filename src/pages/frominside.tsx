@@ -7,7 +7,7 @@ class FromInside extends React.Component {
         return (<React.Fragment>
             <article className={styles.fromInside}>
                 <div className={styles.description}>
-                    <h2>From Inside</h2>
+                    <h1>From Inside</h1>
                     <p>In the everyday way of things, the inside of your car is not considered a dangerous place to be, but when we think no one is listening, when we feel we are alone, it can be a place of secrets and sometimes of menace too.</p>
                     <p>Here are four mysterious tales, each one springing from either an incident or a secret or a choice or just a plain mad moment...inside a car.</p>
                 </div>

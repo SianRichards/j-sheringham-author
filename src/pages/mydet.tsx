@@ -7,14 +7,14 @@ class MyDet extends React.Component {
     render() {
         return (<React.Fragment><article className={styles.myDet}>
             <div className={styles.description}>
-                <h2>My Detective Darling</h2>
+                <h1>My Detective Darling</h1>
                 <p>
                     Traveling through time and space is one thing. Traveling through time and space with Charlie Darling, a self-proclaimed-inter-continental-dimensional detective,
                     is quite another. In this perplexing tale of odd relationships, forgiveness, and things that suddenly get rather hot for no apparent reason, there are dreams and deserts,
                     temples and towers; sand dunes and storms, fear and flight, horses and homecomings.
                 </p>
                 <p className={styles.quote}>
-                    "But what has been will be - first memory, then oblivion’s swallowing sea; Like men foregone, shall we merge into those Whose story no one knows."
+                    <em>"But what has been will be - first memory, then oblivion’s swallowing sea; Like men foregone, shall we merge into those Whose story no one knows."</em>
                 </p>
                 <p>The To-Be-Forgotten by Thomas Hardy.</p>
             </div>

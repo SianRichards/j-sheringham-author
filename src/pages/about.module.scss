@@ -5,27 +5,31 @@
   align-items: center;
   justify-content: space-evenly;
   border-bottom: solid 1px black;
-  background: url("../static/images/brickwall.jpg") no-repeat center center
+  background: url("../static/images/brickwall.jpg") repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   .bio {
-    font-size: 20px;
-    margin: 15px;
-    background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    );
+    h1 {
+      margin: 0;
+    }
+    font-size: 16px;
+    margin: 25px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid black;
     border-radius: 15px;
-    width: 950px;
+    width: auto;
+    max-width: 890px;
+    box-sizing: border-box;
   }
   img {
     object-fit: scale-down;
     height: 400px;
     margin: 15px;
-    border-radius: 30px;
+    border: 1px solid black;
   }
 }
 
