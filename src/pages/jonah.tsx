@@ -1,14 +1,25 @@
 import * as React from 'react';
 import styles from "./jonah.module.scss";
-import JonahImg from "../static/images/jonah.jpg";
 import Button from "../components/button";
+import JonahImg from "../static/images/jonah.jpg";
+import { placeholder } from "../components/placeholder";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import LazyLoad from 'react-lazyload';
 
-class Jonah extends React.Component {
+interface IState {
+    loading: boolean;
+}
+class Jonah extends React.Component<IState> {
+    state = { loading: true }
+
     render() {
         return (<React.Fragment>
             <article className={styles.jonah}>
                 <div className={styles.imageAndButton}>
-                    <img src={JonahImg} alt="The book cover of Jonah by Jo Sheringham" />
+                    <LazyLoad placeholder={placeholder}>
+                        <img src={JonahImg} alt="The book cover of Jonah by Jo Sheringham" />
+                    </LazyLoad>
                     <a href='https://www.biblesociety.org.uk/products/jonah-and-the-bony-finned-asteroid-fish/' target="_blank" rel="noopener noreferrer">
                         <Button title="Browse Here" />
                     </a>
@@ -23,9 +34,10 @@ class Jonah extends React.Component {
                         Can Jonah save the ship’s crew from calamity? And will he finally face up to God’s call and embrace the role of a prophet in one last adventure?
                     </p>
                 </div>
-                <iframe
-                    src="https://www.youtube.com/embed/H0I36z0UzNY" title="Interview with Jo Sheringham about her book Jonah" allowFullScreen frameBorder="0">
-                </iframe>
+                <div className={styles.videoParent}>
+                    <iframe src='https://www.youtube.com/embed/H0I36z0UzNY' className={styles.iframe} onLoad={() => this.setState({ loading: false })} title="Interview with Jo Sheringham about her book Jonah" allowFullScreen frameBorder="0"></iframe>
+                    {this.state.loading && <FontAwesomeIcon icon={faSpinner} spin className={styles.icons} />}
+                </div>
             </article>
         </React.Fragment>);
     }

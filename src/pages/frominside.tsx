@@ -2,6 +2,8 @@ import * as React from 'react';
 import styles from "./frominside.module.scss";
 import FromInsideImg from "../static/images/fromInside.jpg";
 import Button from "../components/button";
+import LazyLoad from 'react-lazyload';
+import { placeholder } from "../components/placeholder";
 class FromInside extends React.Component {
     render() {
         return (<React.Fragment>
@@ -12,7 +14,9 @@ class FromInside extends React.Component {
                     <p>Here are four mysterious tales, each one springing from either an incident or a secret or a choice or just a plain mad moment...inside a car.</p>
                 </div>
                 <div className={styles.imageAndButton}>
-                    <img src={FromInsideImg} alt="The cover of the book From Inside by Jo Sheringham" />
+                    <LazyLoad placeholder={placeholder}>
+                        <img src={FromInsideImg} alt="The cover of the book From Inside by Jo Sheringham" />
+                    </LazyLoad>
                     <a href='https://www.amazon.co.uk/dp/B00IMJNG2U/ref=rdr_kindle_ext_tmb' target="_blank" rel="noopener noreferrer">
                         <Button title="Browse Here" />
                     </a>

@@ -23,14 +23,13 @@
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid black;
-    border-radius: 15px;
     width: auto;
     max-width: 650px;
   }
   .imageAndButton {
     display: flex;
     flex-direction: column;
-    justify-content:  center;
+    justify-content: center;
     img {
       object-fit: scale-down;
       box-sizing: border-box;
@@ -39,17 +38,28 @@
       margin-bottom: 25px;
     }
   }
-  iframe {
-    margin-right: 25px;
-    width: auto;
-    height: 250px;
-    object-fit: scale-down;
+  .videoParent {
+    position: relative;
+    .iframe {
+      margin-right: 25px;
+      width: auto;
+      height: 250px;
+      object-fit: scale-down;
+    }
+    .icons {
+      position: absolute;
+      top: 100px;
+      right: 165px;
+      height: 40px;
+      width: auto;
+      color: white;
+    }
   }
 }
 
 @media (min-width: 1023px) and (max-width: 1029px) {
   .jonah {
-    height: 100%;
+    height: 100vh;
     justify-content: space-around;
     flex-direction: column;
     .description {
@@ -64,41 +74,55 @@
   }
 }
 
-@media (min-width: 750px) and (max-width: 1022px) {
+@media (min-width: 600px) and (max-width: 1022px) {
   .jonah {
-    height: 100%;
+    height: 100vh;
     width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 40px 0 40px 0;
     .description {
       width: 500px;
-      margin: 15px 0 15px 0;
+      margin-bottom: 40px;
     }
     img {
       height: 400px;
       margin: 15px 0 15px 0;
     }
-  }
-}
-
-@media (min-width: 320px) and (max-width: 550px) {
-  .jonah {
-    height: 100%;
-    width: auto;
-    flex-direction: column;
-    .description {
+    .videoParent {
       width: 300px;
-      height: auto;
-      font-size: 18px;
-      margin: 15px;
-    }
-    img {
-      margin: 15px;
-    }
     iframe {
+      margin: 0;
       width: 300px;
       height: 300px;
     }
   }
+}
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .jonah {
+    height: 100%;
+    width: auto;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+    .description {
+      width: auto;
+      height: auto;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    img {
+      margin: 15px;
+    }
+    .videoParent {
+      width: 300px;
+    iframe {
+      margin: 0;
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
 }

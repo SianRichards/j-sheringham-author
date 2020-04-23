@@ -12,6 +12,7 @@
   -o-background-size: cover;
   background-size: cover;
   font-weight: bold;
+  padding: 40px 0 40px 0;
   .form {
     display: flex;
     flex-direction: column;
@@ -21,9 +22,9 @@
       display: flex;
       flex-direction: column;
       margin: 20px;
-      background-color: #495474;
-      color: white;
-      border-radius: 4px;
+      background-color: rgb(88, 172, 197);
+      color: black;
+      border: 2px solid black;
       .formEmail {
         height: 20px;
         padding: 5px;
@@ -37,45 +38,47 @@
         font-size: 15px;
         font-family: "Open Sans", sans-serif;
         color: black;
+        resize: none;
       }
     }
   }
   img {
-    width: 500px;
     object-fit: scale-down;
-    height: auto;
-    border-radius: 30px;
+    height: 500px;
     margin: 15px;
+    border: 1px solid black;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1029px) {
+@media (min-width: 600px) and (max-width: 1029px) {
   .main {
-    height: 1135px;
+    height: 100vh;
     justify-content: space-around;
     flex-direction: column;
     .form {
       height: auto;
-      width: 750px;
+      width: auto;
       margin: 50px 0 0 0;
     }
     img {
-      width: 400px;
+      height: 400px;
     }
   }
 }
 
-@media (min-width: 320px) and (max-width: 550px) {
+@media (min-width: 320px) and (max-width: 599px) {
   .main {
     height: 100%;
     width: auto;
     flex-direction: column;
+    padding: 40px 0 40px 0;
     .form {
       height: auto;
       width: auto;
+      font-size: 18px;
     }
     img {
-      width: 300px;
+      height: 300px;
     }
   }
 }

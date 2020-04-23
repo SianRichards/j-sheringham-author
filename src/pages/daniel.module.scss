@@ -23,7 +23,6 @@
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid black;
-    border-radius: 15px;
     width: auto;
     max-width: 890px;
     height: auto;
@@ -42,10 +41,14 @@
 }
 }
 
-@media (min-width: 768px) and (max-width: 1029px) {
+@media (min-width: 600px) and (max-width: 1029px) {
   .daniel {
-    height: 1135px;
+    height: 100vh;
     justify-content: space-around;
+    padding: 40px 0 40px 0;
+    img {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -58,7 +61,7 @@
     justify-content: space-around;
     .description {
       width: 500px;
-      margin: 15px 0 15px 0;
+      margin-bottom: 40px;
     }
     img {
       object-fit: scale-down;
@@ -67,15 +70,17 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 550px) {
+@media (min-width: 320px) and (max-width: 599px) {
   .daniel {
     height: 100%;
     width: auto;
     flex-direction: column;
+    padding: 40px 0 40px 0;
     .description {
-      width: 310px;
+      width: auto;
       height: auto;
       font-size: 18px;
+      margin-bottom: 40px;
     }
   }
 }
