@@ -14,7 +14,7 @@ class Header extends React.Component<IProps> {
         return ( <React.Fragment>
             <header className={styles.header}>
                 <div className={styles.links}>
-                    <a href="https://www.facebook.com/sheringhambooks/Facebook" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/sheringhambooks/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFacebook} className={styles.icons} />
                     </a>
                     <a href="https://www.instagram.com/jo_sheringham/" target="_blank" rel="noopener noreferrer">

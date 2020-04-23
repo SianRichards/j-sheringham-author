@@ -3,7 +3,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   border-bottom: solid 1px black;
   background: linear-gradient(
       rgba(255, 255, 255, 0.2),
@@ -63,7 +63,7 @@
 
 @media (min-width: 600px) and (max-width: 1022px) {
   .myDet {
-    height: 100vh;
+    height: 100%;
     width: auto;
     display: flex;
     flex-direction: column;
