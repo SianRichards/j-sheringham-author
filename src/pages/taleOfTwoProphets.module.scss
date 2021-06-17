@@ -1,4 +1,4 @@
-.jonah {
+.taleOfTwoProphets {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -9,22 +9,43 @@
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../static/images/space.jpg") center center fixed;
+    url("../static/images/arid-mountains.jpg") center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   .description {
-    h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    max-width: 570px;
+    font-size: 15.5px;
+    height: 600px;
+    .blurb {
+      padding: 10px;
       margin: 0;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 1px solid black;
+      width: auto;
+      .title {
+        font-size: large;
+        font-weight: bold;
+        margin: 0;
+        padding: 0 0 5px 0;
+      }
     }
-    font-size: 16px;
-    margin: 0 20px 0 20px;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid black;
-    width: auto;
-    max-width: 650px;
+    .quotes {
+      background: none;
+      font-style: italic;
+      font-weight: bold;
+      color: black;
+      width: 500px;
+      .author {
+        font-style: normal;
+      }
+    }
   }
   .imageAndButton {
     display: flex;
@@ -41,9 +62,9 @@
   .videoParent {
     position: relative;
     .iframe {
-      margin-right: 25px;
-      width: auto;
-      height: 250px;
+      margin-right: 15px;
+      width: 400px;
+      height: 280px;
       object-fit: scale-down;
     }
     .icons {
@@ -58,24 +79,24 @@
 }
 
 @media (min-width: 1023px) and (max-width: 1029px) {
-  .jonah {
-    height: 100vh;
+  .taleOfTwoProphets {
     justify-content: space-around;
     flex-direction: column;
-    .description {
-      margin: 15px 0 0 0;
-      width: 750px;
-      height: auto;
+    img {
+      height: 200px;
       margin: 15px;
     }
-    img {
-      height: 400px;
+    .description {
+      padding: 0;
+    }
+    .iframe {
+      margin: 15px;
     }
   }
 }
 
 @media (min-width: 600px) and (max-width: 1022px) {
-  .jonah {
+  .taleOfTwoProphets {
     height: 100%;
     width: auto;
     display: flex;
@@ -91,18 +112,19 @@
       margin: 15px 0 15px 0;
     }
     .videoParent {
-      width: 300px;
-    iframe {
-      margin: 0;
-      width: 300px;
-      height: 300px;
+      display: flex;
+      justify-content: center;
+      .iframe {
+        margin: 0;
+        width: 400px;
+        height: 280px;
+      }
     }
   }
 }
-}
 
 @media (min-width: 320px) and (max-width: 599px) {
-  .jonah {
+  .taleOfTwoProphets {
     height: 100%;
     width: auto;
     flex-direction: column;
@@ -111,18 +133,22 @@
       width: auto;
       height: auto;
       font-size: 18px;
-      margin-bottom: 40px;
+      .quotes {
+        width: auto;
+      }
     }
-    img {
+    .img {
       margin: 15px;
     }
     .videoParent {
-      width: 300px;
-    iframe {
-      margin: 0;
-      width: 300px;
-      height: 300px;
+      display: flex;
+      justify-content: center;
+      max-width: 200px;
+      .iframe {
+        margin: 0;
+        width: auto;
+        height: 280px;
+      }
     }
   }
-}
 }

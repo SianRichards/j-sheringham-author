@@ -1,11 +1,11 @@
 .main {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: solid 1px black;
-  background: url("../static/images/brickwall.jpg") no-repeat center center
+  background: url("../static/images/brickwall.jpg") repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -52,8 +52,9 @@
 
 @media (min-width: 600px) and (max-width: 1029px) {
   .main {
-    height: 100vh;
-    justify-content: space-around;
+    height: 100%;
+    width: auto;
+    justify-content: space-between;
     flex-direction: column;
     .form {
       height: auto;
@@ -62,6 +63,7 @@
     }
     img {
       height: 400px;
+      margin-bottom: 110px;
     }
   }
 }

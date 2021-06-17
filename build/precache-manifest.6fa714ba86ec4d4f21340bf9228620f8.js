@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae272eb1a05460624108ac04f38870b0",
+    "revision": "9c80db427bc3213f4e2b76a34e2b0ad8",
     "url": "/index.html"
   },
   {
-    "revision": "e2dac0c33c1a945ba73b",
-    "url": "/static/css/main.c046fa35.chunk.css"
+    "revision": "7803f53facf17d99f0cd",
+    "url": "/static/css/main.2134e98e.chunk.css"
   },
   {
-    "revision": "866ee5c0352c86b4202d",
-    "url": "/static/js/2.6a7928a8.chunk.js"
+    "revision": "732c7a76f1b2b1be52d9",
+    "url": "/static/js/2.40be60cd.chunk.js"
   },
   {
-    "revision": "e2dac0c33c1a945ba73b",
-    "url": "/static/js/main.24d8a6d5.chunk.js"
+    "revision": "7803f53facf17d99f0cd",
+    "url": "/static/js/main.f7888e7f.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "07675a025d9011d12f2d79442507a81a",
     "url": "/static/media/arcticice.07675a02.jpg"
+  },
+  {
+    "revision": "b22c2775fbbc91c412c87a859de3dabe",
+    "url": "/static/media/arid-mountains.b22c2775.jpg"
   },
   {
     "revision": "40dbd2520b1e667341f899482ba599c3",

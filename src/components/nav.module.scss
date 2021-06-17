@@ -1,7 +1,7 @@
 .navbar {
   display: table;
   border-bottom: solid 1px black;
-  width: 100vw;
+  width: 100%;
   text-decoration: none;
   background-color: white;
   font-weight: bold;
@@ -15,7 +15,7 @@
     border: 0.5px solid black;
     display: table-cell;
     text-decoration: none;
-    width: 14.28%;
+    width: 12.5%;
     padding: 5px;
     &:hover {
       cursor: pointer;
@@ -33,7 +33,7 @@
     border: 0.5px solid black;
     display: table-cell;
     text-decoration: none;
-    width: 14.28%;
+    width: 12.5%;
     padding: 0 10px 0 10px;
     &:active {
       font-weight: bold;

@@ -10,16 +10,20 @@ import About from './about';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import PageNotFound from './pageNotFound';
+import ReactGA from 'react-ga';
+import TaleOfTwoProphets from '../pages/taleOfTwoProphets';
 
 const checkRoute = (history: RouteComponentProps) => {
     let pathway = history.location.pathname;
-    let routes = ["/", "/about", "/daniel", "/from-inside", "/my-detective-darling", "/jonah", "/contact", "page-not-found"];
+    let routes = ["/", "/about", "/daniel", "/from-inside", "/my-detective-darling", "/jonah", "/contact", "page-not-found", "/tale-of-two-prophets"];
     let filteredRoutes = routes.filter(route => route === pathway);
     if (filteredRoutes.length === 0)
         return <Redirect to="/page-not-found" />
 }
 
 const Routes = (history: RouteComponentProps): JSX.Element => {
+    ReactGA.initialize('UA-170132555-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
         <div>
             <Header history={history} />
@@ -29,6 +33,7 @@ const Routes = (history: RouteComponentProps): JSX.Element => {
             <Route exact path="/from-inside" component={FromInside} />
             <Route exact path="/my-detective-darling" component={MyDet} />
             <Route exact path="/jonah" component={Jonah} />
+            <Route exact path="/tale-of-two-prophets" component={TaleOfTwoProphets} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/page-not-found" component={PageNotFound} />
             {checkRoute(history)}

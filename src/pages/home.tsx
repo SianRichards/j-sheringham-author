@@ -48,13 +48,18 @@ class Home extends React.Component {
                             </Link>
                         </div>
                         <div className={styles.upcomingBook}>
-                            <a href='https://clcbookshops.com/Products/ViewOne.aspx?ProductId=126806' target="_blank" rel="noopener noreferrer">
-                                <img src={TaleOfTwoProphets} alt="The book cover of A Tale Of Two Prophets by Jo Sheringham" />
-                            </a>
-                            <h3>A Tale Of Two Prophets - Elijah And Elisha Reimagined. <em>Coming Summer 2020.</em></h3>
+                            <Link to="/tale-of-two-prophets">
+                                <LazyLoad>
+                                    <img src={TaleOfTwoProphets} alt="The book cover of A Tale Of Two Prophets by Jo Sheringham" />
+                                </LazyLoad>
+                            </Link>
+                            <div>
+                                <h3>A Tale Of Two Prophets - Elijah And Elisha Reimagined.</h3>
+                                <p>Click the book cover<br/>to find out more</p>
+                            </div>
                         </div>
-                        <a href='https://clcbookshops.com/Products/ViewOne.aspx?ProductId=126806' target="_blank" rel="noopener noreferrer">
-                            <Button title="Find out more" />
+                        <a href='https://www.eden.co.uk/shop/a-tale-of-two-prophets-5172341.html?fbclid=IwAR2CAoAgpPZ8PJ09cgTpLKpNahSBHpq3QOiTCO1kl43cPtypKtLl6_kj8e8' target="_blank" rel="noopener noreferrer">
+                            <Button title="Purchase your copy here" />
                         </a>
                     </div>
                 </article>
