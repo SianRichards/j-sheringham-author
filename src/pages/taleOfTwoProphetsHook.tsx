@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazyload';
-
 import taleOfTwoProphets from '../static/images/tale_of_two_prophets.jpg';
 import { placeholder } from "../components/placeholder";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import styles from './taleOfTwoProphets.module.scss';
-import Button from '../components/button';
+import ButtonHook from "../components/buttonHook";
 
 const TaleOfTwoProphets = () => {
 
@@ -16,11 +14,9 @@ const TaleOfTwoProphets = () => {
         <React.Fragment>
             <article className={styles.taleOfTwoProphets}>
                 <div className={styles.imageAndButton}>
-                    <LazyLoad placeholder={placeholder}>
                         <img src={taleOfTwoProphets} alt="The book cover of Tale Of Two Prophets by Jo Sheringham" />
-                    </LazyLoad>
                     <a href='https://www.eden.co.uk/shop/a-tale-of-two-prophets-5172341.html?fbclid=IwAR2CAoAgpPZ8PJ09cgTpLKpNahSBHpq3QOiTCO1kl43cPtypKtLl6_kj8e8' target="_blank" rel="noopener noreferrer">
-                        <Button title="Browse Here" />
+                        <ButtonHook title="Browse Here" />
                     </a>
                 </div>
                 <div className={styles.description}>

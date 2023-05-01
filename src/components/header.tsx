@@ -1,14 +1,14 @@
 import * as React from 'react';
 import styles from "./header.module.scss";
 import Nav from "./nav";
-import { RouteComponentProps } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
  
 interface IProps {
-    history: RouteComponentProps;
+    location: any;
 }
+
 class Header extends React.Component<IProps> {
     render() { 
         return ( <React.Fragment>
@@ -30,7 +30,7 @@ class Header extends React.Component<IProps> {
                     </h1>
                 </div>
             </header>
-        <Nav history={this.props.history}/>
+        <Nav location={this.props.location}/>
         </React.Fragment>);
     }
 }

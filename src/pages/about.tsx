@@ -1,16 +1,13 @@
 import * as React from 'react';
 import styles from "./about.module.scss";
 import JoImg from "../static/images/aboutportrait.jpg";
-import LazyLoad from 'react-lazyload';
 import { placeholder } from "../components/placeholder";
 class About extends React.Component {
     render() {
         return (<React.Fragment>
             <article className={styles.main}>
                 <div>
-                    <LazyLoad placeholder={placeholder}>
                         <img src={JoImg} alt="The author Jo Sheringham" />
-                    </LazyLoad>
                 </div>
                 <div className={styles.bio}><h1>Author</h1><p>As a scruffy teenager, Jo had no thoughts of writing until at school a short story competition deadline loomed. To avoid detention she scrawled something out on scrap paper and forgot all about it. A surprise to everyone she did rather well but any serious thoughts about writing were shelved.</p>
                     <p>Eventually, years later, the idea was unearthed together with the challenge to write a novel in a year.</p>

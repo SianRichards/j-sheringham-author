@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.2134e98e.chunk.css",
-    "main.js": "/static/js/main.f7888e7f.chunk.js",
-    "main.js.map": "/static/js/main.f7888e7f.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.40be60cd.chunk.js": "/static/js/2.40be60cd.chunk.js",
-    "static/js/2.40be60cd.chunk.js.map": "/static/js/2.40be60cd.chunk.js.map",
+    "main.css": "/static/css/main.61837597.css",
+    "main.js": "/static/js/main.415a2403.js",
+    "static/media/books.png": "/static/media/books.b51ddaeb6ae942c4a52c.png",
+    "static/media/sanddunes.jpg": "/static/media/sanddunes.d79fc910163a03391d5f.jpg",
+    "static/media/brickwall.jpg": "/static/media/brickwall.c0f857000093d6babcfe.jpg",
+    "static/media/space.jpg": "/static/media/space.cf7e2eb9dbbafd1cccb1.jpg",
+    "static/media/carengine.jpg": "/static/media/carengine.653556144ebbe3ce2444.jpg",
+    "static/media/aboutportrait.jpg": "/static/media/aboutportrait.2c337275956e0e2927a9.jpg",
+    "static/media/arcticice.jpg": "/static/media/arcticice.e43a8b155347a206af0b.jpg",
+    "static/media/arid-mountains.jpg": "/static/media/arid-mountains.4f9fe9f0dc15beda89f8.jpg",
+    "static/media/tale_of_two_prophets.jpg": "/static/media/tale_of_two_prophets.ecdfeba34bb8a39ad2bb.jpg",
+    "static/media/daniel.jpg": "/static/media/daniel.d2ddd22b460a11f76529.jpg",
+    "static/media/mydd.jpg": "/static/media/mydd.fcd73bd52e34a67486b6.jpg",
+    "static/media/josheringham.jpg": "/static/media/josheringham.8cb7d8722b25a142ecd5.jpg",
+    "static/media/fromInside.jpg": "/static/media/fromInside.7bc32a84f99c7280524a.jpg",
+    "static/media/jonah.jpg": "/static/media/jonah.92136d59487dee3e185f.jpg",
     "index.html": "/index.html",
-    "precache-manifest.6fa714ba86ec4d4f21340bf9228620f8.js": "/precache-manifest.6fa714ba86ec4d4f21340bf9228620f8.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.2134e98e.chunk.css.map": "/static/css/main.2134e98e.chunk.css.map",
-    "static/media/aboutportrait.jpg": "/static/media/aboutportrait.fc7386be.jpg",
-    "static/media/daniel.module.scss": "/static/media/arcticice.07675a02.jpg",
-    "static/media/taleOfTwoProphets.module.scss": "/static/media/arid-mountains.b22c2775.jpg",
-    "static/media/footer.module.scss": "/static/media/books.40dbd252.png",
-    "static/media/pageNotFound.module.scss": "/static/media/brickwall.701297db.jpg",
-    "static/media/frominside.module.scss": "/static/media/carengine.714af5b5.jpg",
-    "static/media/daniel.jpg": "/static/media/daniel.8b09535c.jpg",
-    "static/media/fromInside.jpg": "/static/media/fromInside.4f8e2f40.jpg",
-    "static/media/jonah.jpg": "/static/media/jonah.bc82787e.jpg",
-    "static/media/josheringham.jpg": "/static/media/josheringham.941eb751.jpg",
-    "static/media/mydd.jpg": "/static/media/mydd.cccf3690.jpg",
-    "static/media/mydet.module.scss": "/static/media/sanddunes.6135f857.jpg",
-    "static/media/jonah.module.scss": "/static/media/space.6ae8b669.jpg",
-    "static/media/tale_of_two_prophets.jpg": "/static/media/tale_of_two_prophets.a7fc5fa2.jpg"
-  }
+    "main.61837597.css.map": "/static/css/main.61837597.css.map",
+    "main.415a2403.js.map": "/static/js/main.415a2403.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61837597.css",
+    "static/js/main.415a2403.js"
+  ]
 }
