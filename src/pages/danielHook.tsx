@@ -8,34 +8,39 @@ const DanielHook = () => {
     <React.Fragment>
       <article className={styles.daniel}>
         <div className={styles.description}>
-          <h1>Synopsis</h1>
+          <h1>Daniel</h1>
           <p>
-            Daniel, a privileged and accomplished student, witnesses the
-            invasion of his city and his nation. Experiencing capture and
-            deprivation, he and his three closest friends, are hauled off into
-            captivity. They are transported to Babylon, a frozen city, where a
-            super-human, dictatorial King, yearns to excel in technology,
-            science and genetic engineering. The snow and ice of Babylon become
-            his home and as time passes, anythoughts of being free to return to
-            the land of his youth disappear.
+            <em>
+              "All sense of decorum and restraint dropped away. Cowering inside
+              their hooded robes they staggered forward into the presence of the
+              king."
+            </em>
           </p>
           <p>
-            Although he remains a captive, Daniel finds that he often has the
-            ear of each successive King; his knowledge, talents and wisdom are
-            called upon to relieve both their personal and public anxieties.
-            Nonetheless the tables are turned on several occasions and threats
-            of execution hang over Daniel and his friends, as they fall prey to
-            the whims of various monarchs or into the political traps of rivals.
+            Daniel, a privileged and accomplished student, experiences invasion,
+            capture and deprivation. Together with his three closest friends, he
+            is hauled off to Babylon, where Nebuchadnezzar, a terrifying,
+            genius-king, yearns to excel in scientific endeavour. In an
+            imaginary, frozen landscape, the snow and ice of Babylon become home
+            and as time passes, any thoughts of returning to the land of his
+            youth evaporate.
           </p>
           <p>
-            This is not a unique tale as it is based on the Old Testament book
-            of Daniel. The novelty however, lies in its retelling. Many familiar
-            elements are woven into the story: capture and captivity,
-            Nebuchadnezzar’s complex character, the dreams and their
-            interpretations; execution attempts and subsequent, miraculous
-            rescues; the writing on the wall and the den of lions. All are
-            remodeled within a wholly futuristic and fantastical context,
-            highlighting the epic, broad sweep of a towering tale.
+            Although a captive, Daniel finds that he often has the ear of each
+            successive king; his talents and wisdom are called upon to relieve
+            both their public and private anxieties. Falling in and out of
+            favour, Daniel and his friends find themselves either working at the
+            top level of government or threatened with execution. They fall prey
+            to both the whims of monarchs and the political traps of rivals.
+          </p>
+          <p>
+            Based on the Old Testament book of Daniel, this story is not unique
+            in itself; the novelty lies in its retelling. A dramatic tale of
+            faith and adventure, it contains all the familiar elements:
+            captivity and kingship; dreams and interpretations; looming
+            execution and miraculous rescue; the writing on the wall and the den
+            of lions. A futuristic, fantastical context highlights the epic,
+            broad sweep of a towering tale.
           </p>
         </div>
         <div className={styles.danielimg}>

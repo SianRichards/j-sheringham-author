@@ -17,6 +17,7 @@ import ReactGA from "react-ga";
 import TaleOfTwoProphetsHook from "./taleOfTwoProphetsHook";
 import PageNotFoundHook from "./pageNotFoundHook";
 import HomeHook from "./HomeHook";
+import AngelsDreamsAndPropheciesHook from "./angelDreamsAndPropheciesHook";
 
 // const checkRoute = () => {
 //   let navigate = useNavigate();
@@ -49,6 +50,7 @@ const Routes = () => {
         <Route path="/about*" element={<AboutHook />} />
         <Route path="/daniel*" element={<DanielHook />} />
         <Route path="/from-inside*" element={<FromInsideHook />} />
+        <Route path="/angels-dreams-and-prophecies" element={<AngelsDreamsAndPropheciesHook />} />
         <Route
           path="/my-detective-darling*"
           element={<MyDetectiveDarlingHook />}

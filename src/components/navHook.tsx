@@ -46,6 +46,19 @@ const NavHook = (props: any) => {
           onClick={() => {
             setBarsClicked(false);
           }}
+          to="/angels-dreams-and-prophecies"
+          className={
+            location.pathname === "/angels-dreams-and-prophecies"
+              ? styles.clickedLink
+              : styles.unclickedLink
+          }
+        >
+          Angels, Dreams and Prophecies
+        </NavLink>
+        <NavLink
+          onClick={() => {
+            setBarsClicked(false);
+          }}
           to="/jonah"
           className={
             location.pathname === "/jonah"

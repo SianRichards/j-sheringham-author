@@ -10,15 +10,21 @@ const FromInsideHook = () => {
         <div className={styles.description}>
           <h1>From Inside</h1>
           <p>
-            In the everyday way of things, the inside of your car is not
-            considered a dangerous place to be, but when we think no one is
-            listening, when we feel we are alone, it can be a place of secrets
-            and sometimes of menace too.
+            <em>
+              "The door of the glove compartment was shaking and burning,
+              sucking in whatever was closest… Suddenly with one great gushing,
+              cracking sound, the door of the glove compartment burst open. A
+              huge, cavernous, red-hot hole. A flaming furnace. A pit of
+              dripping, molten metal…"
+            </em>
           </p>
           <p>
-            Here are four mysterious tales, each one springing from either an
-            incident or a secret or a choice or just a plain mad moment...inside
-            a car.
+            In the everyday way of things, the inside of your car is not
+            considered a dangerous place to be, yet when we think no one is
+            listening, when we feel we are alone, it can be a place of secrets
+            and sometimes of menace too. Here are four mysterious tales, each
+            one springing from either an incident or a secret or a choice or
+            just a plain mad moment inside a car.
           </p>
         </div>
         <div className={styles.imageAndButton}>
