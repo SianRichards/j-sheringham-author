@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import taleOfTwoProphets from '../static/images/tale_of_two_prophets.jpg';
-import { placeholder } from "../components/placeholder";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import styles from './taleOfTwoProphets.module.scss';
@@ -30,7 +29,7 @@ const TaleOfTwoProphets = () => {
                     </div>
                 </div>
                 <div className={styles.videoParent}>
-                    <iframe src="https://drive.google.com/file/d/1prP1mwTpQENA28efrVkUJPnJwGKyu_wp/preview" className={styles.iframe} onLoad={() => setLoading(false)} title="Interview with Jo Sheringham about her book Jonah" allowFullScreen frameBorder="0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/2fkODh3Ozjk&ab" className={styles.iframe} onLoad={() => setLoading(false)} title="Interview with Jo Sheringham about her book Jonah" allowFullScreen frameBorder="0"></iframe>
                     {loading && <FontAwesomeIcon icon={faSpinner} spin className={styles.icons} />}
                 </div>
             </article>
