@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavHook = (props: any) => {
-  const { location } = props;
+  const { pathname } = props;
   const [barsClicked, setBarsClicked] = useState(false);
   return (
     <nav>
@@ -22,7 +22,7 @@ const NavHook = (props: any) => {
           }}
           to="/"
           className={
-            location.pathname === "/"
+            pathname === "/home"
               ? styles.clickedLink
               : styles.unclickedLink
           }
@@ -35,7 +35,7 @@ const NavHook = (props: any) => {
           }}
           to="/tale-of-two-prophets"
           className={
-            location.pathname === "/tale-of-two-prophets"
+            pathname === "/tale-of-two-prophets"
               ? styles.clickedLink
               : styles.unclickedLink
           }
@@ -48,7 +48,7 @@ const NavHook = (props: any) => {
           }}
           to="/angels-dreams-and-prophecies"
           className={
-            location.pathname === "/angels-dreams-and-prophecies"
+            pathname === "/angels-dreams-and-prophecies"
               ? styles.clickedLink
               : styles.unclickedLink
           }
@@ -61,7 +61,7 @@ const NavHook = (props: any) => {
           }}
           to="/jonah"
           className={
-            location.pathname === "/jonah"
+            pathname === "/jonah"
               ? styles.clickedLink
               : styles.unclickedLink
           }
@@ -74,7 +74,7 @@ const NavHook = (props: any) => {
           }}
           to="/about"
           className={
-            location.pathname === "/about"
+            pathname === "/about"
               ? styles.clickedLink
               : styles.unclickedLink
           }
@@ -87,7 +87,7 @@ const NavHook = (props: any) => {
           }}
           to="/daniel"
           className={
-            location.pathname === "/daniel"
+            pathname === "/daniel"
               ? styles.clickedLink
               : styles.unclickedLink
           }
@@ -100,7 +100,7 @@ const NavHook = (props: any) => {
           }}
           to="/from-inside"
           className={
-            location.pathname === "/from-inside"
+            pathname === "/from-inside"
               ? styles.clickedLink
               : styles.unclickedLink
           }
@@ -113,7 +113,7 @@ const NavHook = (props: any) => {
           }}
           to="/my-detective-darling"
           className={
-            location.pathname === "/my-detective-darling"
+            pathname === "/my-detective-darling"
               ? styles.clickedLink
               : styles.unclickedLink
           }
@@ -126,7 +126,7 @@ const NavHook = (props: any) => {
           }}
           to="/contact"
           className={
-            location.pathname === "/contact"
+            pathname === "/contact"
               ? styles.clickedLink
               : styles.unclickedLink
           }

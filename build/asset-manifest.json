@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.61837597.css",
-    "main.js": "/static/js/main.415a2403.js",
+    "main.css": "/static/css/main.a479ab61.css",
+    "main.js": "/static/js/main.c6146083.js",
     "static/media/books.png": "/static/media/books.b51ddaeb6ae942c4a52c.png",
     "static/media/sanddunes.jpg": "/static/media/sanddunes.d79fc910163a03391d5f.jpg",
     "static/media/brickwall.jpg": "/static/media/brickwall.c0f857000093d6babcfe.jpg",
     "static/media/space.jpg": "/static/media/space.cf7e2eb9dbbafd1cccb1.jpg",
+    "static/media/christmas-brickwall.jpg": "/static/media/christmas-brickwall.eeeae558b6f1a345ccc0.jpg",
     "static/media/carengine.jpg": "/static/media/carengine.653556144ebbe3ce2444.jpg",
     "static/media/aboutportrait.jpg": "/static/media/aboutportrait.2c337275956e0e2927a9.jpg",
     "static/media/arcticice.jpg": "/static/media/arcticice.e43a8b155347a206af0b.jpg",
@@ -17,11 +18,11 @@
     "static/media/fromInside.jpg": "/static/media/fromInside.7bc32a84f99c7280524a.jpg",
     "static/media/jonah.jpg": "/static/media/jonah.92136d59487dee3e185f.jpg",
     "index.html": "/index.html",
-    "main.61837597.css.map": "/static/css/main.61837597.css.map",
-    "main.415a2403.js.map": "/static/js/main.415a2403.js.map"
+    "main.a479ab61.css.map": "/static/css/main.a479ab61.css.map",
+    "main.c6146083.js.map": "/static/js/main.c6146083.js.map"
   },
   "entrypoints": [
-    "static/css/main.61837597.css",
-    "static/js/main.415a2403.js"
+    "static/css/main.a479ab61.css",
+    "static/js/main.c6146083.js"
   ]
 }
