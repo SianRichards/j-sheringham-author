@@ -1,39 +1,51 @@
 import React from "react";
 import styles from "./angelsDreams.module.scss";
+import episode1 from "../static/audiofiles/ADP1.mp3";
+import episode2 from "../static/audiofiles/ADP2.mp3";
+import episode3 from "../static/audiofiles/ADP3.mp3";
+import episode4 from "../static/audiofiles/ADP4.mp3";
+import episode5 from "../static/audiofiles/ADP5.mp3";
+import episode6 from "../static/audiofiles/ADP6.mp3";
+import episode7 from "../static/audiofiles/ADP7.mp3";
+import episode8 from "../static/audiofiles/ADP8.mp3";
+import episode9 from "../static/audiofiles/ADP9.mp3";
+import episode10 from "../static/audiofiles/ADP10.mp3";
+import episode11 from "../static/audiofiles/ADP11.mp3";
+import episode12 from "../static/audiofiles/ADP12.mp3";
 
 interface IProps {
-  id: string;
-  number: number;
+  fileName: string;
+  title: string;
 }
 
 const AudioFile = (props: IProps) => {
-  const { id, number } = props;
+  const { fileName, title } = props;
+
   return (
     <div className={styles.audioFile}>
-      Episode {number}
+      {title}
       <audio controls>
-        <source src={`https://docs.google.com/uc?export=download&id=!${id}`} />
+        <source src={fileName} />
       </audio>
     </div>
   );
 };
 
 const audioFileIds1 = [
-  { id: "1_gpVixVpnmy-jP862C3PMav9M0SpvL-r", number: 1 },
-  { id: "1ov94OUN6ozhSFR4dexggNzHXwav0glB5", number: 2 },
-  { id: "1TKMYt_8lsmqXoGeGSAYH5CuhqcvnZPAH", number: 3 },
-  { id: "1WdbWklJf9BsiWGYL8M80nNwwMwLWm2m1", number: 4 },
-  { id: "1eMQk4V3AS19WOpnACS0cSDOjNHiVv1Ko", number: 5 },
-  { id: "11JyLLSoOnipzH8_5jL12DAcmUAo6Gv7yU", number: 6 },
+  { fileName: episode1, title: "Episode 1" },
+  { fileName: episode2, title: "Episode 2" },
+  { fileName: episode3, title: "Episode 3" },
+  { fileName: episode4, title: "Episode 4" },
+  { fileName: episode5, title: "Episode 5" },
+  { fileName: episode6, title: "Episode 6" },
 ];
-
 const audioFileIds2 = [
-  { id: "1kGeyrT3ud1obYlj7F1U_H_DAfOs5hnbN", number: 7 },
-  { id: "1obsIoH-Zj74exIZbwbZVpnkpp8YOLvdm", number: 8 },
-  { id: "1uDTZ4NHkO4Nk_FsLQ2qheUVOI-cMNM97", number: 9 },
-  { id: "1SQASBdxmrUFicU6HcRG3qR1FoBwZ6JcX", number: 10 },
-  { id: "1ZYhL8x2ZTOSxamLv-C0Uzz-YUU_w_Tfo", number: 11 },
-  { id: "1NP4B0c2HEyzdOmurb36XnYej8CE2sNVM", number: 12 },
+  { fileName: episode7, title: "Episode 7" },
+  { fileName: episode8, title: "Episode 8" },
+  { fileName: episode9, title: "Episode 9" },
+  { fileName: episode10, title: "Episode 10" },
+  { fileName: episode11, title: "Episode 11" },
+  { fileName: episode12, title: "Episode 12" },
 ];
 
 const AngelsDreamsAndPropheciesHook = () => {
@@ -50,15 +62,15 @@ const AngelsDreamsAndPropheciesHook = () => {
         </p>
         <div className={styles.audioColumns}>
           <div>
-            {audioFileIds1.map((idObject) => {
-              const { id, number } = idObject;
-              return <AudioFile id={id} number={number} />;
+            {audioFileIds1.map((audio) => {
+              const { fileName, title } = audio;
+              return <AudioFile fileName={fileName} title={title} />;
             })}
           </div>
           <div>
-            {audioFileIds2.map((idObject) => {
-              const { id, number } = idObject;
-              return <AudioFile id={id} number={number} />;
+            {audioFileIds2.map((audio) => {
+              const { fileName, title } = audio;
+              return <AudioFile fileName={fileName} title={title} />;
             })}
           </div>
         </div>
