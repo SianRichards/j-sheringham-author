@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./home.module.scss";
+import JoImg from "../../static/images/aboutportrait.jpg";
 import JonahImg from "../../static/images/jonah.jpg";
 import DanielImg from "../../static/images/daniel.jpg";
 import FromInsideImg from "../../static/images/fromInside.jpg";
@@ -12,6 +13,37 @@ const Home = () => {
   return (
     <div className={styles.main}>
       <article className={styles.home}>
+        <div className={styles.homeInfo}>
+          <div className={styles.upcomingBook}>
+            <Link to="/tale-of-two-prophets">
+              <img
+                src={TaleOfTwoProphets}
+                alt="The book cover of A Tale Of Two Prophets by Jo Sheringham"
+              />
+            </Link>
+            <div>
+              <h3>A Tale Of Two Prophets - Elijah And Elisha Reimagined.</h3>
+              <p>
+                Click the book cover
+                <br />
+                to find out more
+              </p>
+            </div>
+          </div>
+          <div className={styles.authorInfo}>
+            <img src={JoImg} alt="The author Jo Sheringham"/>
+          <div className={styles.authorInfo}>
+            <p className={styles.retelling}>
+              Retelling old tales and discovering the delights of the
+              ordinary...
+            </p>
+            <Link to="/about">
+              <Button title="About the author" />
+            </Link>
+          </div>
+          </div>
+        </div>
+        <hr className={styles.divider}></hr>
         <div className={styles.worksection}>
           <h1>Books</h1>
           <div className={styles.works}>
@@ -40,40 +72,6 @@ const Home = () => {
               />
             </Link>
           </div>
-        </div>
-        <div className={styles.homeInfo}>
-          <div className={styles.authorInfo}>
-            <h3>
-              Retelling old tales and discovering the delights of the
-              ordinary...
-            </h3>
-            <Link to="/about">
-              <Button title="About the author" />
-            </Link>
-          </div>
-          <div className={styles.upcomingBook}>
-            <Link to="/tale-of-two-prophets">
-              <img
-                src={TaleOfTwoProphets}
-                alt="The book cover of A Tale Of Two Prophets by Jo Sheringham"
-              />
-            </Link>
-            <div>
-              <h3>A Tale Of Two Prophets - Elijah And Elisha Reimagined.</h3>
-              <p>
-                Click the book cover
-                <br />
-                to find out more
-              </p>
-            </div>
-          </div>
-          <a
-            href="https://www.eden.co.uk/shop/a-tale-of-two-prophets-5172341.html?fbclid=IwAR2CAoAgpPZ8PJ09cgTpLKpNahSBHpq3QOiTCO1kl43cPtypKtLl6_kj8e8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button title="Purchase your copy here" />
-          </a>
         </div>
       </article>
     </div>
