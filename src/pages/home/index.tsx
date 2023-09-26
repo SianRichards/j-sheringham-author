@@ -31,46 +31,61 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.authorInfo}>
-            <img src={JoImg} alt="The author Jo Sheringham"/>
-          <div className={styles.authorInfo}>
-            <p className={styles.retelling}>
-              Retelling old tales and discovering the delights of the
-              ordinary...
-            </p>
-            <Link to="/about">
-              <Button title="About the author" />
-            </Link>
-          </div>
+            <img src={JoImg} alt="The author Jo Sheringham" />
+            <div className={styles.authorInfo}>
+              <p className={styles.retelling}>
+                Retelling old tales and discovering the delights of the
+                ordinary...
+              </p>
+              <Link to="/about">
+                <Button title="About the author" />
+              </Link>
+            </div>
           </div>
         </div>
         <hr className={styles.divider}></hr>
         <div className={styles.worksection}>
           <h1>Books</h1>
           <div className={styles.works}>
-            <Link to="/jonah">
-              <img
-                src={JonahImg}
-                alt="The book cover of Jonah by Jo Sheringham"
-              />
-            </Link>
-            <Link to="/daniel">
-              <img
-                src={DanielImg}
-                alt="The book cover of Daniel by Jo Sheringham"
-              />
-            </Link>
-            <Link to="/from-inside">
-              <img
-                src={FromInsideImg}
-                alt="The book cover of From Inside by Jo Sheringham"
-              />
-            </Link>
-            <Link to="/my-detective-darling">
-              <img
-                src={MyDetectiveDarlingImg}
-                alt="The book cover of My Detective Darling by Jo Sheringham"
-              />
-            </Link>
+            <div className={styles.work}>
+              <Link to="/jonah">
+                <img
+                  src={JonahImg}
+                  alt="The book cover of Jonah by Jo Sheringham"
+                />
+              </Link>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div className={styles.work}>
+              {" "}
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <Link to="/daniel">
+                <img
+                  src={DanielImg}
+                  alt="The book cover of Daniel by Jo Sheringham"
+                />
+              </Link>
+            </div>
+            <div className={styles.work}>
+              {" "}
+              <Link to="/from-inside">
+                <img
+                  src={FromInsideImg}
+                  alt="The book cover of From Inside by Jo Sheringham"
+                />
+              </Link>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div className={styles.work}>
+              {" "}
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <Link to="/my-detective-darling">
+                <img
+                  src={MyDetectiveDarlingImg}
+                  alt="The book cover of My Detective Darling by Jo Sheringham"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </article>
