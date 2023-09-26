@@ -54,16 +54,16 @@ const audioFileMapper = (audioFileIds: Array<IProps>) => {
 };
 
 const AngelsDreamsAndProphecies = () => {
-  let arrayOfEpisodesAsObjects = episodes.map((episode, index) => {
+  const arrayOfEpisodesAsObjects = episodes.map((episode, index) => {
     return { fileName: episode, title: `Episode ${index + 1}` };
   });
-  let halfOfArratOfEpisodesAsObjects = arrayOfEpisodesAsObjects.length / 2;
-  let firstHalf = arrayOfEpisodesAsObjects.slice(
+  const halfOfArrayOfEpisodesAsObjects = arrayOfEpisodesAsObjects.length / 2;
+  const firstHalf = arrayOfEpisodesAsObjects.slice(
     0,
-    halfOfArratOfEpisodesAsObjects
+    halfOfArrayOfEpisodesAsObjects
   );
-  let secondHalf = arrayOfEpisodesAsObjects.slice(
-    halfOfArratOfEpisodesAsObjects,
+  const secondHalf = arrayOfEpisodesAsObjects.slice(
+    halfOfArrayOfEpisodesAsObjects,
     arrayOfEpisodesAsObjects.length
   );
 
