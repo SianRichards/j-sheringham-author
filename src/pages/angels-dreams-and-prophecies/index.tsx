@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./angelsDreams.module.scss";
 import episode1 from "../../static/audiofiles/ADP1.mp3";
 import episode2 from "../../static/audiofiles/ADP2.mp3";
@@ -18,6 +18,21 @@ interface IProps {
   title: string;
 }
 
+const episodes = [
+  episode1,
+  episode2,
+  episode3,
+  episode4,
+  episode5,
+  episode6,
+  episode7,
+  episode8,
+  episode9,
+  episode10,
+  episode11,
+  episode12,
+];
+
 const AudioFile = (props: IProps) => {
   const { fileName, title } = props;
 
@@ -31,23 +46,6 @@ const AudioFile = (props: IProps) => {
   );
 };
 
-const audioFileIds1 = [
-  { fileName: episode1, title: "Episode 1" },
-  { fileName: episode2, title: "Episode 2" },
-  { fileName: episode3, title: "Episode 3" },
-  { fileName: episode4, title: "Episode 4" },
-  { fileName: episode5, title: "Episode 5" },
-  { fileName: episode6, title: "Episode 6" },
-];
-const audioFileIds2 = [
-  { fileName: episode7, title: "Episode 7" },
-  { fileName: episode8, title: "Episode 8" },
-  { fileName: episode9, title: "Episode 9" },
-  { fileName: episode10, title: "Episode 10" },
-  { fileName: episode11, title: "Episode 11" },
-  { fileName: episode12, title: "Episode 12" },
-];
-
 const audioFileMapper = (audioFileIds: Array<IProps>) => {
   return audioFileIds.map((audio) => {
     const { fileName, title } = audio;
@@ -56,6 +54,19 @@ const audioFileMapper = (audioFileIds: Array<IProps>) => {
 };
 
 const AngelsDreamsAndProphecies = () => {
+  let arrayOfEpisodesAsObjects = episodes.map((episode, index) => {
+    return { fileName: episode, title: `Episode ${index + 1}` };
+  });
+  let halfOfArratOfEpisodesAsObjects = arrayOfEpisodesAsObjects.length / 2;
+  let firstHalf = arrayOfEpisodesAsObjects.slice(
+    0,
+    halfOfArratOfEpisodesAsObjects
+  );
+  let secondHalf = arrayOfEpisodesAsObjects.slice(
+    halfOfArratOfEpisodesAsObjects,
+    arrayOfEpisodesAsObjects.length
+  );
+
   return (
     <article className={styles.main}>
       <div className={styles.audio}>
@@ -68,8 +79,8 @@ const AngelsDreamsAndProphecies = () => {
           </b>
         </p>
         <div className={styles.audioColumns}>
-          <div>{audioFileMapper(audioFileIds1)}</div>
-          <div>{audioFileMapper(audioFileIds2)}</div>
+          <div>{audioFileMapper(firstHalf)}</div>
+          <div>{audioFileMapper(secondHalf)}</div>
         </div>
       </div>
     </article>
