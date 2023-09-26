@@ -48,6 +48,13 @@ const audioFileIds2 = [
   { fileName: episode12, title: "Episode 12" },
 ];
 
+const audioFileMapper = (audioFileIds: Array<IProps>) => {
+  return audioFileIds.map((audio) => {
+    const { fileName, title } = audio;
+    return <AudioFile fileName={fileName} title={title} />;
+  });
+};
+
 const AngelsDreamsAndProphecies = () => {
   return (
     <article className={styles.main}>
@@ -61,18 +68,8 @@ const AngelsDreamsAndProphecies = () => {
           </b>
         </p>
         <div className={styles.audioColumns}>
-          <div>
-            {audioFileIds1.map((audio) => {
-              const { fileName, title } = audio;
-              return <AudioFile fileName={fileName} title={title} />;
-            })}
-          </div>
-          <div>
-            {audioFileIds2.map((audio) => {
-              const { fileName, title } = audio;
-              return <AudioFile fileName={fileName} title={title} />;
-            })}
-          </div>
+          <div>{audioFileMapper(audioFileIds1)}</div>
+          <div>{audioFileMapper(audioFileIds2)}</div>
         </div>
       </div>
     </article>
