@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./angelsDreams.module.scss";
-import episode1 from "../static/audiofiles/ADP1.mp3";
-import episode2 from "../static/audiofiles/ADP2.mp3";
-import episode3 from "../static/audiofiles/ADP3.mp3";
-import episode4 from "../static/audiofiles/ADP4.mp3";
-import episode5 from "../static/audiofiles/ADP5.mp3";
-import episode6 from "../static/audiofiles/ADP6.mp3";
-import episode7 from "../static/audiofiles/ADP7.mp3";
-import episode8 from "../static/audiofiles/ADP8.mp3";
-import episode9 from "../static/audiofiles/ADP9.mp3";
-import episode10 from "../static/audiofiles/ADP10.mp3";
-import episode11 from "../static/audiofiles/ADP11.mp3";
-import episode12 from "../static/audiofiles/ADP12.mp3";
+import episode1 from "../../static/audiofiles/ADP1.mp3";
+import episode2 from "../../static/audiofiles/ADP2.mp3";
+import episode3 from "../../static/audiofiles/ADP3.mp3";
+import episode4 from "../../static/audiofiles/ADP4.mp3";
+import episode5 from "../../static/audiofiles/ADP5.mp3";
+import episode6 from "../../static/audiofiles/ADP6.mp3";
+import episode7 from "../../static/audiofiles/ADP7.mp3";
+import episode8 from "../../static/audiofiles/ADP8.mp3";
+import episode9 from "../../static/audiofiles/ADP9.mp3";
+import episode10 from "../../static/audiofiles/ADP10.mp3";
+import episode11 from "../../static/audiofiles/ADP11.mp3";
+import episode12 from "../../static/audiofiles/ADP12.mp3";
 
 interface IProps {
   fileName: string;

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./daniel.module.scss";
-import DanielPic from "../static/images/daniel.jpg";
-import ButtonHook from "../components/buttonHook";
+import DanielPic from "../../static/images/daniel.jpg";
+import ButtonHook from "../../components/button";
 
 const DanielHook = () => {
   return (

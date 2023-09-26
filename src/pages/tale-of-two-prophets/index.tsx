@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import taleOfTwoProphets from '../static/images/tale_of_two_prophets.jpg';
+import taleOfTwoProphets from '../../static/images/tale_of_two_prophets.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import styles from './taleOfTwoProphets.module.scss';
-import ButtonHook from "../components/buttonHook";
+import ButtonHook from "../../components/button";
 
 const TaleOfTwoProphets = () => {
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./jonah.module.scss";
-import ButtonHook from "../components/buttonHook";
-import JonahImg from "../static/images/jonah.jpg";
+import ButtonHook from "../../components/button";
+import JonahImg from "../../static/images/jonah.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./home.module.scss";
-import JonahImg from "../static/images/jonah.jpg";
-import DanielImg from "../static/images/daniel.jpg";
-import FromInsideImg from "../static/images/fromInside.jpg";
-import MyDetectiveDarlingImg from "../static/images/mydd.jpg";
-import TaleOfTwoProphets from "../static/images/tale_of_two_prophets.jpg";
+import JonahImg from "../../static/images/jonah.jpg";
+import DanielImg from "../../static/images/daniel.jpg";
+import FromInsideImg from "../../static/images/fromInside.jpg";
+import MyDetectiveDarlingImg from "../../static/images/mydd.jpg";
+import TaleOfTwoProphets from "../../static/images/tale_of_two_prophets.jpg";
 import { Link } from "react-router-dom";
-import ButtonHook from "../components/buttonHook";
+import ButtonHook from "../../components/button";
 
 const HomeHook = () => {
   return (

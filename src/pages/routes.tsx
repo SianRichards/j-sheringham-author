@@ -4,17 +4,17 @@ import {
   Routes as RouteWrapper,
   useLocation,
 } from "react-router-dom";
-import DanielHook from "./danielHook";
-import FromInsideHook from "./fromInsideHook";
-import MyDetectiveDarlingHook from "./myDetectiveDarlingHook";
-import JonahHook from "./jonahHook";
-import ContactHook from "./contactHook";
-import AboutHook from "./aboutHook";
-import HeaderHook from "../components/headerHook";
+import DanielHook from "./daniel";
+import FromInsideHook from "./from-inside";
+import MyDetectiveDarlingHook from "./my-detective-darling";
+import JonahHook from "./jonah";
+import ContactHook from "./contact";
+import AboutHook from "./about";
+import HeaderHook from "../components/header";
 import Footer from "../components/footer";
-import TaleOfTwoProphetsHook from "./taleOfTwoProphetsHook";
-import HomeHook from "./HomeHook";
-import AngelsDreamsAndPropheciesHook from "./angelDreamsAndPropheciesHook";
+import TaleOfTwoProphetsHook from "./tale-of-two-prophets";
+import HomeHook from "./home";
+import AngelsDreamsAndPropheciesHook from "./angels-dreams-and-prophecies";
 
 const Routes = () => {
   let pathname = useLocation().pathname;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./header.module.scss";
-import NavHook from "./navHook";
+import NavHook from "../nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,

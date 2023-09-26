@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./frominside.module.scss";
-import FromInsideImg from "../static/images/fromInside.jpg";
-import ButtonHook from "../components/buttonHook";
+import FromInsideImg from "../../static/images/fromInside.jpg";
+import ButtonHook from "../../components/button";
 
 const FromInsideHook = () => {
   return (

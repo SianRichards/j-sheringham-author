@@ -1,87 +1,99 @@
-.main {
+.myDet {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: solid 1px black;
-  background: url("../static/images/brickwall.jpg") repeat center center
-    fixed;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../../static/images/sanddunes.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  .bio {
+  .placeholder {
+    height: 380px;
+    box-sizing: border-box;
+    object-fit: scale-down;
+    border: 1px solid black;
+    margin: 0 25px 25px 25px;
+  }
+  .description {
     h1 {
       margin: 0;
     }
     font-size: 16px;
-    margin: 25px;
+    margin: 0 25px 0 25px;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid black;
     width: auto;
     max-width: 890px;
-    box-sizing: border-box;
   }
-  img {
-    object-fit: scale-down;
-    height: 400px;
-    margin: 15px;
-    border: 1px solid black;
+  .imageAndButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      height: 380px;
+      box-sizing: border-box;
+      object-fit: scale-down;
+      border: 1px solid black;
+      margin: 0 25px 25px 25px;
+    }
   }
 }
 
 @media (min-width: 1023px) and (max-width: 1029px) {
-  .main {
+  .myDet {
     height: 1135px;
     justify-content: space-around;
-    .bio {
-      width: 500px; 
-      margin: 15px 0 15px 0;
+    flex-direction: column;
+    .description {
+      margin: 15px 0 0 0;
     }
     img {
-      object-fit: scale-down;
       height: 400px;
-      margin: 0;
     }
   }
 }
 
 @media (min-width: 600px) and (max-width: 1022px) {
-  .main {
+  .myDet {
     height: 100%;
     width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 40px 0 40px 0;
-    .bio {
-      width: 500px; 
-      margin: 15px 0 15px 0;
+    .description {
+      width: 500px;
+      margin-bottom: 40px;
     }
     img {
-      object-fit: scale-down;
-      height: 300px;
+      height: 400px;
+      margin: 15px 0 15px 0;
     }
   }
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
-  .main {
+  .myDet {
     height: 100%;
     width: auto;
     flex-direction: column;
     padding: 40px 0 40px 0;
-    .bio {
+    .description {
       width: auto;
-      margin: 15px;
+      height: auto;
       font-size: 18px;
+      margin-bottom: 40px;
     }
     img {
-      object-fit: scale-down;
-      height: 300px;
-      margin: 20px;
+      margin: 15px;
     }
   }
 }

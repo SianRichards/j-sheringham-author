@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./contact.module.scss";
-import JoSheringham from "../static/images/josheringham.jpg";
-import ButtonHook from "../components/buttonHook";
+import JoSheringham from "../../static/images/josheringham.jpg";
+import ButtonHook from "../../components/button";
 
 const ContactHook = () => {
   const [status, setStatus] = useState("");

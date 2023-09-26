@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./mydet.module.scss";
-import MyDetective from "../static/images/mydd.jpg";
-import ButtonHook from "../components/buttonHook";
+import MyDetective from "../../static/images/mydd.jpg";
+import ButtonHook from "../../components/button";
 
 const MyDetectiveDarlingHook = () => {
   return (
