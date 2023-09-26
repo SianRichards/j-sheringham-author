@@ -1,7 +1,6 @@
 .home {
   width: 100%;
   overflow-x: hidden;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
@@ -12,6 +11,54 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  .homeInfo {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .authorInfo {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        object-fit: scale-down;
+        height: 200px;
+        border: 1px solid black;
+      }
+      .retelling {
+        font-size:medium;
+      }
+    }
+    .upcomingBook {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 25px;
+      img {
+        object-fit: scale-down;
+        height: 400px;
+        margin: 15px;
+        border: 1px solid black;
+        &:hover {
+          box-shadow: 0 0 15px 10px grey;
+          background-size: cover;
+          transform: scale(1.1);
+        }
+      }
+      h3 {
+        font-size: 20px;
+        width: 200px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .divider {
+    border-top: 3px solid rgb(0, 0, 0);
+  }
   .worksection {
     display: flex;
     flex-direction: column;
@@ -41,42 +88,6 @@
           transform: scale(1.1);
         }
       }
-    }
-  }
-}
-.homeInfo {
-  font-size: 30px;
-  .authorInfo {
-    font-weight: bold;
-    width: 600px;
-    font-size: 25px;
-    margin: 25px;
-    h3 {
-      margin: 15px;
-    }
-  }
-  .upcomingBook {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
-    img {
-      object-fit: scale-down;
-      max-height: 270px;
-      margin: 15px;
-      border: 1px solid black;
-      &:hover {
-        box-shadow: 0 0 15px 10px grey;
-        background-size: cover;
-        transform: scale(1.1);
-      }
-    }
-    h3 {
-      font-size: 20px;
-      width: 200px;
-    }
-    p {
-      font-size: 20px;
     }
   }
 }
