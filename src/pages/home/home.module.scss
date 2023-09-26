@@ -70,22 +70,27 @@
       padding-bottom: 15px;
     }
     .works {
-      object-fit: scale-down;
-      display: grid;
-      grid-template-columns: 250px 250px;
-      grid-column: 1fr 1fr;
-      grid-row: auto auto;
-      grid-row-gap: 40px;
-      justify-items: center;
-      img {
-        object-fit: scale-down;
-        height: auto;
-        max-height: 275px;
-        border: 1px solid black;
-        &:hover {
-          box-shadow: 0 0 15px 10px grey;
-          background-size: cover;
-          transform: scale(1.1);
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      .work {
+        display: flex;
+        margin: 30px;
+        justify-content: space-around;
+        align-items: center;
+        p {
+          max-width: 50%;
+        }
+        img {
+          object-fit: scale-down;
+          height: auto;
+          max-height: 275px;
+          border: 1px solid black;
+          &:hover {
+            box-shadow: 0 0 15px 10px grey;
+            background-size: cover;
+            transform: scale(1.1);
+          }
         }
       }
     }
