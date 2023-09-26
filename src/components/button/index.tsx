@@ -6,7 +6,7 @@ export interface IProps {
   children?: any;
 }
 
-const ButtonHook = (props: IProps) => {
+const Button = (props: IProps) => {
   const { title, children } = props;
   return (
     <button className={styles.button}>
@@ -16,4 +16,4 @@ const ButtonHook = (props: IProps) => {
   );
 };
 
-export default ButtonHook;
+export default Button;

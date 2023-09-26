@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./mydet.module.scss";
 import MyDetective from "../../static/images/mydd.jpg";
-import ButtonHook from "../../components/button";
+import Button from "../../components/button";
 
-const MyDetectiveDarlingHook = () => {
+const MyDetectiveDarling = () => {
   return (
     <React.Fragment>
       <article className={styles.myDet}>
@@ -55,7 +55,7 @@ const MyDetectiveDarlingHook = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonHook title="Browse Here" />
+            <Button title="Browse Here" />
           </a>
         </div>
       </article>
@@ -63,4 +63,4 @@ const MyDetectiveDarlingHook = () => {
   );
 };
 
-export default MyDetectiveDarlingHook;
+export default MyDetectiveDarling;

@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./frominside.module.scss";
 import FromInsideImg from "../../static/images/fromInside.jpg";
-import ButtonHook from "../../components/button";
+import Button from "../../components/button";
 
-const FromInsideHook = () => {
+const FromInside = () => {
   return (
     <React.Fragment>
       <article className={styles.fromInside}>
@@ -38,7 +38,7 @@ const FromInsideHook = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonHook title="Browse Here" />
+            <Button title="Browse Here" />
           </a>
         </div>
       </article>
@@ -46,4 +46,4 @@ const FromInsideHook = () => {
   );
 };
 
-export default FromInsideHook;
+export default FromInside;

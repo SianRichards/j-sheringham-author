@@ -48,7 +48,7 @@ const audioFileIds2 = [
   { fileName: episode12, title: "Episode 12" },
 ];
 
-const AngelsDreamsAndPropheciesHook = () => {
+const AngelsDreamsAndProphecies = () => {
   return (
     <article className={styles.main}>
       <div className={styles.audio}>
@@ -79,4 +79,4 @@ const AngelsDreamsAndPropheciesHook = () => {
   );
 };
 
-export default AngelsDreamsAndPropheciesHook;
+export default AngelsDreamsAndProphecies;

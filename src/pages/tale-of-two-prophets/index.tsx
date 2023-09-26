@@ -3,7 +3,7 @@ import taleOfTwoProphets from '../../static/images/tale_of_two_prophets.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import styles from './taleOfTwoProphets.module.scss';
-import ButtonHook from "../../components/button";
+import Button from "../../components/button";
 
 const TaleOfTwoProphets = () => {
 
@@ -15,7 +15,7 @@ const TaleOfTwoProphets = () => {
                 <div className={styles.imageAndButton}>
                         <img src={taleOfTwoProphets} alt="The book cover of Tale Of Two Prophets by Jo Sheringham" />
                     <a href='https://www.eden.co.uk/shop/a-tale-of-two-prophets-5172341.html?fbclid=IwAR2CAoAgpPZ8PJ09cgTpLKpNahSBHpq3QOiTCO1kl43cPtypKtLl6_kj8e8' target="_blank" rel="noopener noreferrer">
-                        <ButtonHook title="Browse Here" />
+                        <Button title="Browse Here" />
                     </a>
                 </div>
                 <div className={styles.description}>

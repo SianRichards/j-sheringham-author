@@ -6,9 +6,9 @@ import FromInsideImg from "../../static/images/fromInside.jpg";
 import MyDetectiveDarlingImg from "../../static/images/mydd.jpg";
 import TaleOfTwoProphets from "../../static/images/tale_of_two_prophets.jpg";
 import { Link } from "react-router-dom";
-import ButtonHook from "../../components/button";
+import Button from "../../components/button";
 
-const HomeHook = () => {
+const Home = () => {
   return (
     <div className={styles.main}>
       <article className={styles.home}>
@@ -48,7 +48,7 @@ const HomeHook = () => {
               ordinary...
             </h3>
             <Link to="/about">
-              <ButtonHook title="About the author" />
+              <Button title="About the author" />
             </Link>
           </div>
           <div className={styles.upcomingBook}>
@@ -72,7 +72,7 @@ const HomeHook = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonHook title="Purchase your copy here" />
+            <Button title="Purchase your copy here" />
           </a>
         </div>
       </article>
@@ -80,4 +80,4 @@ const HomeHook = () => {
   );
 };
 
-export default HomeHook;
+export default Home;

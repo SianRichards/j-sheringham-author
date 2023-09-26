@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./about.module.scss";
 import JoImg from "../../static/images/aboutportrait.jpg";
 
-const AboutHook = () => {
+const About = () => {
   return (
     <React.Fragment>
       <article className={styles.main}>
@@ -36,4 +36,4 @@ const AboutHook = () => {
   );
 };
 
-export default AboutHook;
+export default About;

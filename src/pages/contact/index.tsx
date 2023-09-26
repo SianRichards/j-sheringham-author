@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./contact.module.scss";
 import JoSheringham from "../../static/images/josheringham.jpg";
-import ButtonHook from "../../components/button";
+import Button from "../../components/button";
 
-const ContactHook = () => {
+const Contact = () => {
   const [status, setStatus] = useState("");
   const submitForm = (event: any) => {
     console.log(event);
@@ -47,7 +47,7 @@ const ContactHook = () => {
             {status === "SUCCESS" ? (
               <p>Thank you, your enquiry has been submitted.</p>
             ) : (
-              <ButtonHook title="Submit" />
+              <Button title="Submit" />
             )}
             {status === "ERROR" && (
               <p>
@@ -69,4 +69,4 @@ const ContactHook = () => {
   );
 };
 
-export default ContactHook;
+export default Contact;

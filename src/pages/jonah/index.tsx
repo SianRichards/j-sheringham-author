@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styles from "./jonah.module.scss";
-import ButtonHook from "../../components/button";
+import Button from "../../components/button";
 import JonahImg from "../../static/images/jonah.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
-const JonahHook = () => {
+const Jonah = () => {
   const [loading, setLoadingValue] = useState(true);
   return (
     <React.Fragment>
@@ -17,7 +17,7 @@ const JonahHook = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonHook title="Browse Here" />
+            <Button title="Browse Here" />
           </a>
         </div>
         <div className={styles.description}>
@@ -52,4 +52,4 @@ const JonahHook = () => {
   );
 };
 
-export default JonahHook;
+export default Jonah;

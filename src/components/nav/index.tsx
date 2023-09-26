@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const NavHook = (props: any) => {
+const Nav = (props: any) => {
   const { pathname } = props;
   const [barsClicked, setBarsClicked] = useState(false);
   return (
@@ -138,4 +138,4 @@ const NavHook = (props: any) => {
   );
 };
 
-export default NavHook;
+export default Nav;

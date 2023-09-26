@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./header.module.scss";
-import NavHook from "../nav";
+import Nav from "../nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -12,7 +12,7 @@ interface IProps {
   pathname: any;
 }
 
-const HeaderHook = (props: IProps) => {
+const Header = (props: IProps) => {
   const { pathname } = props;
   return (
     <React.Fragment>
@@ -43,9 +43,9 @@ const HeaderHook = (props: IProps) => {
           <h1 className={styles.title}>Jo Sheringham</h1>
         </div>
       </header>
-      <NavHook pathname={pathname} />
+      <Nav pathname={pathname} />
     </React.Fragment>
   );
 };
 
-export default HeaderHook;
+export default Header;

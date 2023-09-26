@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./pageNotFound.module.scss";
 
-const PageNotFoundHook = () => {
+const PageNotFound = () => {
   return (
     <article className={styles.main}>
       <div className={styles.text}>
@@ -15,4 +15,4 @@ const PageNotFoundHook = () => {
   );
 };
 
-export default PageNotFoundHook;
+export default PageNotFound;

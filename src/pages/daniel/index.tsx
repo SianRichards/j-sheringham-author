@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./daniel.module.scss";
 import DanielPic from "../../static/images/daniel.jpg";
-import ButtonHook from "../../components/button";
+import Button from "../../components/button";
 
-const DanielHook = () => {
+const Daniel = () => {
   return (
     <React.Fragment>
       <article className={styles.daniel}>
@@ -53,7 +53,7 @@ const DanielHook = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ButtonHook title="Browse Here" />
+            <Button title="Browse Here" />
           </a>
         </div>
       </article>
@@ -61,4 +61,4 @@ const DanielHook = () => {
   );
 };
 
-export default DanielHook;
+export default Daniel;
