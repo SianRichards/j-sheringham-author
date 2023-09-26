@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./angelsDreams.module.scss";
 import episode1 from "../../static/audiofiles/ADP1.mp3";
 import episode2 from "../../static/audiofiles/ADP2.mp3";
@@ -47,9 +47,9 @@ const AudioFile = (props: IProps) => {
 };
 
 const audioFileMapper = (audioFileIds: Array<IProps>) => {
-  return audioFileIds.map((audio) => {
+  return audioFileIds.map((audio, index) => {
     const { fileName, title } = audio;
-    return <AudioFile fileName={fileName} title={title} />;
+    return <AudioFile fileName={fileName} title={title} key={index} />;
   });
 };
 
