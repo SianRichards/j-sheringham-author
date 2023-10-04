@@ -3,7 +3,6 @@
   overflow-x: hidden;
   align-items: center;
   justify-content: center;
-  padding: 40px;
   border-bottom: solid 1px black;
   background: url("../../static/images/brickwall.jpg") repeat center center
     fixed;
@@ -13,46 +12,48 @@
   background-size: cover;
   .homeInfo {
     font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .authorInfo {
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      img {
-        object-fit: scale-down;
-        height: 200px;
-        border: 1px solid black;
-      }
-      .retelling {
-        font-size:medium;
-      }
+    background-color: rgba(66, 66, 66, 0.365);
+    h1 {
+      margin: 0;
+      padding: 20px;
     }
-    .upcomingBook {
+    .homeSection {
       display: flex;
-      justify-content: center;
       align-items: center;
-      align-content: center;
-      margin: 25px;
-      img {
-        object-fit: scale-down;
-        height: 400px;
-        margin: 15px;
-        border: 1px solid black;
-        &:hover {
-          box-shadow: 0 0 15px 10px grey;
-          background-size: cover;
-          transform: scale(1.1);
+      justify-content: center;
+      .authorInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          object-fit: scale-down;
+          height: 400px;
+          border: 1px solid black;
+        }
+        .retelling {
+          font-size: large;
         }
       }
-      h3 {
-        font-size: 20px;
-        width: 200px;
-      }
-      p {
-        font-size: 20px;
+      .upcomingBook {
+        margin: 50px;
+        img {
+          height: 500px;
+          margin: 15px;
+          border: 1px solid black;
+          &:hover {
+            box-shadow: 0 0 15px 10px grey;
+            background-size: cover;
+            transform: scale(1.1);
+          }
+        }
+        h3 {
+          font-size: 20px;
+          // width: 200px;
+        }
+        p {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -130,36 +131,36 @@
         justify-items: center;
       }
     }
-        .homeInfo {
-          font-size: 30px;
-          .authorInfo {
-            font-weight: bold;
-            width: 600px;
-            font-size: 25px;
-            margin: 25px;
-            h3 {
-              margin: 15px;
-            }
-          }
-          .upcomingBook {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 25px;
-            img {
-              object-fit: scale-down;
-              height: 300px;
-              margin: 15px;
-            }
-            h3 {
-              font-size: 20px;
-              width: 300px;
-            }
-          }
+    .homeInfo {
+      font-size: 30px;
+      .authorInfo {
+        font-weight: bold;
+        width: 600px;
+        font-size: 25px;
+        margin: 25px;
+        h3 {
+          margin: 15px;
+        }
+      }
+      .upcomingBook {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+        img {
+          object-fit: scale-down;
+          height: 300px;
+          margin: 15px;
+        }
+        h3 {
+          font-size: 20px;
+          width: 300px;
         }
       }
     }
-        
+  }
+}
+
 @media (min-width: 600px) and (max-width: 1022px) {
   .home {
     height: 100%;
@@ -208,31 +209,31 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-          .authorInfo {
-            font-weight: bold;
-            width: auto;
-            font-size: 18px;
-            margin: 25px;
-            h3 {
-              margin: 15px;
-            }
-          }
-          .upcomingBook {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 25px;
-            img {
-              object-fit: scale-down;
-              height: 200px;
-              margin: 15px;
-            }
-            h3 {
-              font-size: 18px;
-              width: auto;
-            }
-          }
+      .authorInfo {
+        font-weight: bold;
+        width: auto;
+        font-size: 18px;
+        margin: 25px;
+        h3 {
+          margin: 15px;
+        }
+      }
+      .upcomingBook {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+        img {
+          object-fit: scale-down;
+          height: 200px;
+          margin: 15px;
+        }
+        h3 {
+          font-size: 18px;
+          width: auto;
         }
       }
     }
+  }
+}

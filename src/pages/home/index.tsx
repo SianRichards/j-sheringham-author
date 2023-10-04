@@ -14,6 +14,8 @@ const Home = () => {
     <div className={styles.main}>
       <article className={styles.home}>
         <div className={styles.homeInfo}>
+        <h1>Latest Release</h1>
+        <div className={styles.homeSection}>
           <div className={styles.upcomingBook}>
             <Link to="/tale-of-two-prophets">
               <img
@@ -22,28 +24,28 @@ const Home = () => {
               />
             </Link>
             <div>
-              <h3>A Tale Of Two Prophets - Elijah And Elisha Reimagined.</h3>
-              <p>
+              <h3>
                 Click the book cover
                 <br />
                 to find out more
-              </p>
+              </h3>
             </div>
-          </div>
+            </div>
           <div className={styles.authorInfo}>
             <img src={JoImg} alt="The author Jo Sheringham" />
             <div className={styles.authorInfo}>
-              <p className={styles.retelling}>
+              <h3 className={styles.retelling}>
                 Retelling old tales and discovering the delights of the
                 ordinary...
-              </p>
+              </h3>
               <Link to="/about">
                 <Button title="About the author" />
               </Link>
             </div>
           </div>
+          </div>
         </div>
-        <hr className={styles.divider}></hr>
+        {/* <hr className={styles.divider}></hr> */}
         <div className={styles.worksection}>
           <h1>Books</h1>
           <div className={styles.works}>
@@ -54,11 +56,17 @@ const Home = () => {
                   alt="The book cover of Jonah by Jo Sheringham"
                 />
               </Link>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
             <div className={styles.work}>
               {" "}
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
               <Link to="/daniel">
                 <img
                   src={DanielImg}
@@ -74,11 +82,17 @@ const Home = () => {
                   alt="The book cover of From Inside by Jo Sheringham"
                 />
               </Link>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
             <div className={styles.work}>
               {" "}
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
               <Link to="/my-detective-darling">
                 <img
                   src={MyDetectiveDarlingImg}
