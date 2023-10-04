@@ -45,7 +45,6 @@ const Home = () => {
           </div>
           </div>
         </div>
-        {/* <hr className={styles.divider}></hr> */}
         <div className={styles.worksection}>
           <h1>Explore other works</h1>
           <div className={styles.works}>
