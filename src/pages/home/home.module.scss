@@ -50,6 +50,7 @@
         }
         h3 {
           font-size: 20px;
+          margin: 0;
         }
         p {
           font-size: 20px;
@@ -71,166 +72,79 @@
       display: flex;
       flex-direction: column;
       width: 50%;
-      .work {
+      p {
+        max-width: 75%;
+      }
+      img {
+        object-fit: scale-down;
+        height: auto;
+        max-height: 375px;
+        border: 1px solid black;
+        margin: 30px;
+        &:hover {
+          box-shadow: 0 0 15px 10px grey;
+          background-size: cover;
+          transform: scale(1.1);
+        }
+      }
+      .workOrderNormal {
         display: flex;
         margin: 30px;
         justify-content: space-around;
         align-items: center;
-        p {
-          max-width: 50%;
-        }
-        img {
-          object-fit: scale-down;
-          height: auto;
-          max-height: 375px;
-          border: 1px solid black;
-          &:hover {
-            box-shadow: 0 0 15px 10px grey;
-            background-size: cover;
-            transform: scale(1.1);
-          }
-        }
       }
-    }
-  }
-}
-
-@media (min-width: 1023px) and (max-width: 1030px) {
-  .home {
-    height: 100%;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border-bottom: solid 1px black;
-    background: url("../../static/images/brickwall.jpg") no-repeat center center
-      fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    .worksection {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      h1 {
-        font-size: 30px;
-        margin: 0 0 15px 0;
-      }
-      .works {
-        display: grid;
-        grid-template-columns: 250px 250px;
-        grid-column: 1fr 1fr;
-        grid-row: auto auto;
-        grid-row-gap: 40px;
-        justify-items: center;
-      }
-    }
-    .homeInfo {
-      font-size: 30px;
-      .authorInfo {
-        font-weight: bold;
-        width: 600px;
-        font-size: 25px;
-        margin: 25px;
-        h3 {
-          margin: 15px;
-        }
-      }
-      .upcomingBook {
+      .workOrderReverse {
         display: flex;
-        justify-content: center;
+        margin: 30px;
+        justify-content: space-around;
+        flex-direction: row-reverse;
         align-items: center;
-        margin: 25px;
-        img {
-          object-fit: scale-down;
-          height: 300px;
-          margin: 15px;
-        }
-        h3 {
-          font-size: 20px;
-          width: 300px;
-        }
       }
     }
   }
 }
 
-@media (min-width: 600px) and (max-width: 1022px) {
-  .home {
-    height: 100%;
-    width: auto;
-    flex-direction: column;
-    .worksection {
-      padding: 40px;
-      .works {
-        grid-template-columns: 150px 150px;
-        grid-column: 1fr 1fr;
-        grid-row-gap: 20px;
-        img {
-          height: 200px;
-        }
-      }
-    }
-    .homeinfo {
-      h3 {
-        width: 300px;
-        font-size: 20px;
-      }
-    }
+@media (min-width: 800px) and (max-width: 1200px) {
+  .authorInfo {
+    margin-right: 70px;
   }
-}
-
-@media (min-width: 320px) and (max-width: 599px) {
-  .home {
-    height: 100%;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-    .worksection {
-      padding: 40px;
-      .works {
-        grid-template-columns: 150px 150px;
-        grid-column: 1fr 1fr;
-        grid-row-gap: 20px;
-        img {
-          height: 200px;
-        }
-      }
+  .works {
+    width: 100% !important;
+    p {
+      max-width: 100% !important;
     }
-    .homeInfo {
-      display: flex;
+    .workOrderNormal {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .authorInfo {
-        font-weight: bold;
-        width: auto;
-        font-size: 18px;
-        margin: 25px;
-        h3 {
-          margin: 15px;
-        }
-      }
-      .upcomingBook {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 25px;
-        img {
-          object-fit: scale-down;
-          height: 200px;
-          margin: 15px;
-        }
-        h3 {
-          font-size: 18px;
-          width: auto;
-        }
-      }
+    }
+    .workOrderReverse {
+      flex-direction: column !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 799px) {
+  img {
+    max-height: 375px;
+  }
+  .homeSection {
+    flex-direction: column;
+    .upcomingBook {
+      margin: 0 !important;
+    }
+    .authorInfo {
+      margin-top: 20px;
+    }
+  }
+  .works {
+    width: 100% !important;
+    p {
+      max-width: 100% !important;
+    }
+    .workOrderNormal {
+      flex-direction: column;
+    }
+    .workOrderReverse {
+      flex-direction: column !important;
     }
   }
 }

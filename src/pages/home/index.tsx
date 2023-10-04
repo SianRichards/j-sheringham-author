@@ -48,7 +48,7 @@ const Home = () => {
         <div className={styles.worksection}>
           <h1>Explore other works</h1>
           <div className={styles.works}>
-            <div className={styles.work}>
+            <div className={styles.workOrderNormal}>
               <Link to="/jonah">
                 <img
                   src={JonahImg}
@@ -60,20 +60,19 @@ const Home = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div className={styles.work}>
-              {" "}
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+            <div className={styles.workOrderReverse}>
               <Link to="/daniel">
                 <img
                   src={DanielImg}
                   alt="The book cover of Daniel by Jo Sheringham"
                 />
               </Link>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
-            <div className={styles.work}>
+            <div className={styles.workOrderNormal}>
               {" "}
               <Link to="/from-inside">
                 <img
@@ -86,18 +85,18 @@ const Home = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div className={styles.work}>
-              {" "}
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+            <div className={styles.workOrderReverse}>
               <Link to="/my-detective-darling">
                 <img
                   src={MyDetectiveDarlingImg}
                   alt="The book cover of My Detective Darling by Jo Sheringham"
                 />
               </Link>
+              {" "}
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
         </div>
