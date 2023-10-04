@@ -4,14 +4,13 @@
   width: 100%;
   text-decoration: none;
   background-color: white;
-  font-weight: bold;
   .bars {
     display: none;
   }
   .unclickedLink {
     vertical-align: middle;
-    color: black;
-    background-color: rgb(88, 172, 197);
+    color: #FFB329;
+    background-color: rgb(66, 66, 66);
     border: 0.5px solid black;
     display: table-cell;
     text-decoration: none;
@@ -19,7 +18,7 @@
     padding: 5px;
     &:hover {
       cursor: pointer;
-      background-color: white;
+      background-color: #FFB329;
       color: black;
     }
     &:active {
@@ -28,7 +27,7 @@
   }
   .clickedLink {
     vertical-align: middle;
-    background-color: white;
+    background-color: #FFB329;
     color: black;
     border: 0.5px solid black;
     display: table-cell;
@@ -53,7 +52,7 @@
     margin: 10px;
   }
   .clickedLink {
-    background-color: white;
+    background-color: #FFB329;
     color: black;
     border: 0.5px solid black;
     text-decoration: none;
@@ -69,8 +68,8 @@
     }
   }
   .unclickedLink {
-    background-color: rgb(88, 172, 197);
-    color: black;
+    background-color: rgb(66, 66, 66);
+    color: #FFB329;
     border: 0.5px solid black;
     text-decoration: none;
     font-weight: bold;
@@ -88,7 +87,8 @@
 
 @media (min-width: 320px) and (max-width: 590px) {
   .navbar {
-    background-color: rgb(88, 172, 197);
+    background-color: rgb(66, 66, 66);
+    color: #FFB329;
     display: flex;
     .bars {
       display: flex;
