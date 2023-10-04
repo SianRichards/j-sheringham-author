@@ -50,7 +50,6 @@
         }
         h3 {
           font-size: 20px;
-          // width: 200px;
         }
         p {
           font-size: 20px;
@@ -66,10 +65,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
     h1 {
-      font-size: 30px;
-      margin: 0 0 15px 0;
-      padding-bottom: 15px;
+      margin: 0;
+      padding: 20px;
     }
     .works {
       display: flex;
@@ -86,7 +85,7 @@
         img {
           object-fit: scale-down;
           height: auto;
-          max-height: 275px;
+          max-height: 375px;
           border: 1px solid black;
           &:hover {
             box-shadow: 0 0 15px 10px grey;

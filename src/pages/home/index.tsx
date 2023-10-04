@@ -47,7 +47,7 @@ const Home = () => {
         </div>
         {/* <hr className={styles.divider}></hr> */}
         <div className={styles.worksection}>
-          <h1>Books</h1>
+          <h1>Explore other works</h1>
           <div className={styles.works}>
             <div className={styles.work}>
               <Link to="/jonah">
