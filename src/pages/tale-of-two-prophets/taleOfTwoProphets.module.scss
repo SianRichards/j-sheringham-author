@@ -1,9 +1,7 @@
 .taleOfTwoProphets {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  justify-items: center;
   border-bottom: solid 1px black;
   background: linear-gradient(
       rgba(255, 255, 255, 0.2),
@@ -14,66 +12,55 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  .description {
+  .imageAndBlurb {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    max-width: 570px;
-    font-size: 15.5px;
-    height: 600px;
-    .blurb {
-      padding: 10px;
-      margin: 0;
-      background-color: rgba(255, 255, 255, 0.7);
-      border: 1px solid black;
-      width: auto;
-      .title {
-        font-size: large;
-        font-weight: bold;
-        margin: 0;
-        padding: 0 0 5px 0;
+    justify-content: center;
+    .imageAndButton {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      img {
+        height: 500px;
+        border: 1px solid black;
+        margin-bottom: 15px;
       }
     }
-    .quotes {
-      background: none;
-      font-style: italic;
-      font-weight: bold;
-      color: black;
-      width: 500px;
-      .author {
-        font-style: normal;
+    .blurb {
+      h1 {
+        margin: 0;
+      }
+      max-width: 40%;
+      font-size: 25px;
+      margin-left: 50px;
+      padding: 15px;
+      border: 1px solid black;
+      background-color: rgba(0, 0, 0, 0.456);
+      color: white;
+      .blurbText {
+        font-style: italic;
       }
     }
   }
-  .imageAndButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    img {
-      object-fit: scale-down;
-      box-sizing: border-box;
-      height: 380px;
-      border: 1px solid black;
-      margin-bottom: 25px;
+  .quotes {
+    font-size: 18px;
+    color: white;
+    border: 1px solid black;
+    background-color: #186fc78d;
+    max-width: 800px;
+    padding: 15px;
+    margin: 30px;
+    .author {
+      font-style: oblique;
+      font-weight: bolder;
     }
   }
   .videoParent {
-    position: relative;
     .iframe {
-      margin-right: 30px;
-      width: 400px;
-      height: 280px;
-      object-fit: scale-down;
-    }
-    .icons {
-      position: absolute;
-      top: 100px;
-      right: 165px;
-      height: 40px;
-      width: auto;
-      color: white;
+      width: 600px;
+      height: 350px;
+      margin-bottom: 35px;
     }
   }
 }
