@@ -1,6 +1,7 @@
 .taleOfTwoProphets {
   width: 100%;
   display: grid;
+  overflow-x: hidden;
   justify-items: center;
   border-bottom: solid 1px black;
   background: linear-gradient(
@@ -31,7 +32,7 @@
       h1 {
         margin: 0;
       }
-      max-width: 40%;
+      max-width: 600px;
       font-size: 25px;
       margin-left: 50px;
       padding: 15px;
@@ -65,77 +66,26 @@
   }
 }
 
-@media (min-width: 1023px) and (max-width: 1029px) {
+@media (min-width: 320px) and (max-width: 1060px) {
   .taleOfTwoProphets {
-    justify-content: space-around;
-    flex-direction: column;
-    img {
-      height: 200px;
-      margin: 15px;
-    }
-    .description {
-      padding: 0;
-    }
-    .iframe {
-      margin: 15px;
-    }
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1022px) {
-  .taleOfTwoProphets {
-    height: 100%;
-    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 40px 0 40px 0;
-    .description {
-      width: 500px;
-      margin-bottom: 40px;
-    }
-    img {
-      height: 400px;
-      margin: 15px 0 15px 0;
-    }
-    .videoParent {
-      display: flex;
-      justify-content: center;
-      .iframe {
-        margin: 0;
-        width: 400px;
-        height: 280px;
+    align-items: center;
+    .imageAndBlurb {
+      flex-direction: column;
+      .blurb {
+        font-size: 18px !important;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
       }
     }
-  }
-}
-
-@media (min-width: 320px) and (max-width: 599px) {
-  .taleOfTwoProphets {
-    height: 100%;
-    width: auto;
-    flex-direction: column;
-    padding: 40px 0 40px 0;
-    .description {
-      width: auto;
-      height: auto;
-      font-size: 18px;
-      .quotes {
-        width: auto;
-      }
+    .quotes {
+      margin-left: 15px !important;
+      margin-right: 15px !important;
     }
-    .img {
-      margin: 15px;
-    }
-    .videoParent {
-      display: flex;
-      justify-content: center;
-      max-width: 200px;
-      .iframe {
-        margin: 0;
-        width: auto;
-        height: 280px;
-      }
+    .iframe {
+      width: 92% !important;
+      height: 280px;
     }
   }
 }
