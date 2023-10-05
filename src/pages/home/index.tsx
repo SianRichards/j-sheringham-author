@@ -56,8 +56,11 @@ const Home = () => {
                 />
               </Link>
               <p>
-                A creative sci-fi re-imagining of the book of Jonah, packed full
-                of wit and humour for adults and young people alike.
+                Fleeing a persistent message-bot, reluctant prophet Jonah's
+                last-minute getaway to planet Tarshish takes an unexpected turn
+                on the haulage cruiser Sheol II, pushing him to embrace his
+                prophetic role and potentially save the crew in his final
+                adventure.
               </p>
             </div>
             <div className={styles.workOrderReverse}>
