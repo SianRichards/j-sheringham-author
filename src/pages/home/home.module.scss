@@ -23,17 +23,22 @@
       align-items: center;
       justify-content: center;
       h3 {
+        margin: 15px;
+      }
+      h4 {
         font-size: 25px;
         margin: 0;
+        max-width: 500px;
       }
       .authorInfo {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 20px;
         img {
           object-fit: scale-down;
-          height: 400px;
+          height: 450px;
           border: 1px solid black;
           margin-bottom: 15px;
         }
@@ -122,11 +127,13 @@
   }
   .homeSection {
     flex-direction: column;
+    h4 {
+      margin: 0 15px 0 15px !important;
+    }
     .upcomingBook {
       margin: 0 !important;
     }
     .authorInfo {
-      margin: 20px;
       .retelling {
         margin: 15px !important;
       }
