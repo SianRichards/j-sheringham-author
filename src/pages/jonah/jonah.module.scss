@@ -1,9 +1,7 @@
 .jonah {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  overflow-x: hidden;
+  justify-content: center;
   border-bottom: solid 1px black;
   background: linear-gradient(
       rgba(255, 255, 255, 0.2),
@@ -14,115 +12,59 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  .description {
-    h1 {
-      margin: 0;
-    }
-    font-size: 16px;
-    margin: 0 20px 0 20px;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid black;
-    width: auto;
-    max-width: 650px;
-  }
-  .imageAndButton {
+  .imageAndBlurb {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    img {
-      object-fit: scale-down;
-      box-sizing: border-box;
-      height: 380px;
+    .imageAndButton {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      img {
+        height: 500px;
+        border: 1px solid black;
+        margin-bottom: 15px;
+      }
+    }
+    .description {
+      h1 {
+        margin: 0;
+      }
+      max-width: 600px;
+      font-size: 25px;
+      margin-left: 50px;
+      padding: 15px;
       border: 1px solid black;
-      margin-bottom: 25px;
-    }
-  }
-  .videoParent {
-    position: relative;
-    .iframe {
-      margin-right: 25px;
-      width: auto;
-      height: 250px;
-      object-fit: scale-down;
-    }
-    .icons {
-      position: absolute;
-      top: 100px;
-      right: 165px;
-      height: 40px;
-      width: auto;
+      background-color: rgba(0, 0, 0, 0.456);
       color: white;
     }
   }
-}
-
-@media (min-width: 1023px) and (max-width: 1029px) {
-  .jonah {
-    height: 100vh;
-    justify-content: space-around;
-    flex-direction: column;
-    .description {
-      margin: 15px 0 0 0;
-      width: 750px;
-      height: auto;
-      margin: 15px;
-    }
-    img {
-      height: 400px;
+  .videoParent {
+    .iframe {
+      width: 600px;
+      height: 350px;
+      margin-bottom: 35px;
     }
   }
 }
 
-@media (min-width: 600px) and (max-width: 1022px) {
+@media (min-width: 320px) and (max-width: 1060px) {
   .jonah {
-    height: 100%;
-    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 40px 0 40px 0;
-    .description {
-      width: 500px;
-      margin-bottom: 40px;
+    align-items: center;
+    .imageAndBlurb {
+      flex-direction: column;
+      .description {
+        font-size: 18px !important;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+      }
     }
-    img {
-      height: 400px;
-      margin: 15px 0 15px 0;
-    }
-    .videoParent {
-      width: 300px;
-    iframe {
-      margin: 0;
-      width: 300px;
-      height: 300px;
+    .iframe {
+      width: 92% !important;
+      height: 280px;
     }
   }
-}
-}
-
-@media (min-width: 320px) and (max-width: 599px) {
-  .jonah {
-    height: 100%;
-    width: auto;
-    flex-direction: column;
-    padding: 40px 0 40px 0;
-    .description {
-      width: auto;
-      height: auto;
-      font-size: 18px;
-      margin-bottom: 40px;
-    }
-    img {
-      margin: 15px;
-    }
-    .videoParent {
-      width: 300px;
-    iframe {
-      margin: 0;
-      width: 300px;
-      height: 300px;
-    }
-  }
-}
 }
