@@ -1,8 +1,8 @@
 .daniel {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  min-height: 100vh;
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: auto auto;
   justify-content: center;
   border-bottom: solid 1px black;
   background: linear-gradient(
@@ -14,73 +14,51 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  .description {
-    h1 {
-      margin: 0;
-    }
-    font-size: 16px;
-    margin: 0 25px 0 25px;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid black;
-    width: auto;
-    max-width: 890px;
-    height: auto;
-  }
-  .danielimg {
+  .imageAndBlurb {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    img {
-      object-fit: scale-down;
-      box-sizing: border-box;
-      height: 380px;
-      margin: 0 25px 25px 25px;
-      border: 1px solid black;
+    .imageAndButton {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      img {
+        height: 500px;
+        border: 1px solid black;
+        margin-bottom: 15px;
+      }
     }
-}
-}
-
-@media (min-width: 600px) and (max-width: 1029px) {
-  .daniel {
-    height: 100vh;
-    justify-content: space-around;
-    padding: 40px 0 40px 0;
-    img {
-      margin-top: 40px;
-    }
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1022px) {
-  .daniel {
-    height: 100%;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     .description {
-      width: 500px;
-      margin-bottom: 40px;
-    }
-    img {
-      object-fit: scale-down;
-      height: 300px;
-    }
-  }
-}
-
-@media (min-width: 320px) and (max-width: 599px) {
-  .daniel {
-    height: 100%;
-    width: auto;
-    flex-direction: column;
-    padding: 40px 0 40px 0;
-    .description {
-      width: auto;
+      h1 {
+        margin: 0;
+        font-size: 30px;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 16px;
       height: auto;
-      font-size: 18px;
-      margin-bottom: 40px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 1px solid black;
+      max-width: 890px;
+      box-sizing: border-box;
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1060px) {
+  .daniel {
+    display: flex;
+    align-items: center;
+    .imageAndBlurb {
+      flex-direction: column-reverse !important;
+      .description {
+        font-size: 18px !important;
+        margin: 15px;
+      }
     }
   }
 }
