@@ -9,7 +9,7 @@ const About = () => {
         <img src={JoImg} alt="The author Jo Sheringham" />
       </div>
       <div className={styles.bio}>
-        <h1>Author</h1>
+        <h1>Jo Sheringham</h1>
         <p>
           As a scruffy teenager, Jo had no thoughts of writing until at school a
           short story competition deadline loomed. To avoid detention, she

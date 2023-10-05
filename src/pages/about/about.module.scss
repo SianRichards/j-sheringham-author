@@ -1,9 +1,10 @@
 .main {
   height: 100vh;
   width: 100%;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
+  align-items: center;
   border-bottom: solid 1px black;
   background: url("../../static/images/brickwall.jpg") repeat center center
     fixed;
@@ -14,41 +15,27 @@
   .bio {
     h1 {
       margin: 0;
+      font-size: 30px;
     }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 16px;
-    margin: 25px;
+    height: 450px;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid black;
-    width: auto;
     max-width: 890px;
     box-sizing: border-box;
   }
   img {
-    object-fit: scale-down;
-    height: 400px;
+    height: 450px;
     margin: 15px;
     border: 1px solid black;
   }
 }
 
-@media (min-width: 1023px) and (max-width: 1029px) {
-  .main {
-    height: 1135px;
-    justify-content: space-around;
-    .bio {
-      width: 500px; 
-      margin: 15px 0 15px 0;
-    }
-    img {
-      object-fit: scale-down;
-      height: 400px;
-      margin: 0;
-    }
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1022px) {
+@media (min-width: 320px) and (max-width: 1022px) {
   .main {
     height: 100%;
     width: auto;
@@ -57,31 +44,13 @@
     justify-content: space-around;
     padding: 40px 0 40px 0;
     .bio {
-      width: 500px; 
+      width: 90%; 
       margin: 15px 0 15px 0;
+      height: auto;
     }
     img {
       object-fit: scale-down;
       height: 300px;
-    }
-  }
-}
-
-@media (min-width: 320px) and (max-width: 599px) {
-  .main {
-    height: 100%;
-    width: auto;
-    flex-direction: column;
-    padding: 40px 0 40px 0;
-    .bio {
-      width: auto;
-      margin: 15px;
-      font-size: 18px;
-    }
-    img {
-      object-fit: scale-down;
-      height: 300px;
-      margin: 20px;
     }
   }
 }
