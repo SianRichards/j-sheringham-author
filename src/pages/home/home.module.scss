@@ -22,6 +22,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      h3 {
+        font-size: 25px;
+        margin: 0;
+      }
       .authorInfo {
         display: flex;
         flex-direction: column;
@@ -31,9 +35,7 @@
           object-fit: scale-down;
           height: 400px;
           border: 1px solid black;
-        }
-        .retelling {
-          font-size: large;
+          margin-bottom: 15px;
         }
       }
       .upcomingBook {
@@ -48,13 +50,6 @@
             transform: scale(1.1);
           }
         }
-        h3 {
-          font-size: 20px;
-          margin: 0;
-        }
-        p {
-          font-size: 20px;
-        }
       }
     }
   }
@@ -63,7 +58,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 23px;
     h1 {
       margin: 0;
       padding: 20px;
@@ -130,13 +125,20 @@
       margin: 0 !important;
     }
     .authorInfo {
-      margin-top: 20px;
+      margin: 20px;
+      .retelling {
+        margin: 15px !important;
+      }
     }
   }
   .works {
     width: 100% !important;
+    img {
+      margin: 0 !important;
+    }
     p {
       max-width: 90% !important;
+      margin: 0 0 20px 0 !important;
     }
     .workOrderNormal {
       flex-direction: column;
