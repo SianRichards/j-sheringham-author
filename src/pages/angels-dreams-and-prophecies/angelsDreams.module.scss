@@ -14,8 +14,8 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 30px;
+    font-size: larger;
     .audioColumns {
       display:flex;
       .audioFile {
@@ -23,8 +23,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 5px;
+        margin: 15px;
         border: 2px solid black;
+        background-color: white;
       }
     }
   }
@@ -59,7 +60,6 @@
     height: 100%;
     width: auto;
     flex-direction: column;
-    padding: 40px 0 40px 0;
     .audioColumns {
       flex-direction: column;
     }
