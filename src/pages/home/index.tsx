@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./home.module.scss";
-import JoImg from "../../static/images/aboutportrait.jpg";
+import JoImg from "../../static/images/author_portrait.jpg";
 import JonahImg from "../../static/images/jonah.jpg";
 import DanielImg from "../../static/images/daniel.jpg";
 import FromInsideImg from "../../static/images/fromInside.jpg";
 import MyDetectiveDarlingImg from "../../static/images/mydd.jpg";
 import TaleOfTwoProphets from "../../static/images/tale_of_two_prophets.jpg";
+import NewBook from "../../static/images/new_book_to_be_revealed.png";
 import { Link } from "react-router-dom";
 import Button from "../../components/button";
 
@@ -14,30 +15,25 @@ const Home = () => {
     <div className={styles.main}>
       <article className={styles.home}>
         <div className={styles.homeInfo}>
-          <h1>Latest Release</h1>
+          <h1>What's new</h1>
           <div className={styles.homeSection}>
             <div className={styles.upcomingBook}>
-              <Link to="/tale-of-two-prophets">
-                <img
-                  src={TaleOfTwoProphets}
-                  alt="The book cover of A Tale Of Two Prophets by Jo Sheringham"
-                />
-              </Link>
+              <img src={NewBook} alt="New book to be released in 2024" />
               <div>
-                <h3>
-                  Click the book cover
-                  <br />
-                  to find out more
-                </h3>
+                <h4>
+                  Watch this space for updates on my new novel to be released
+                  early 2024
+                </h4>
               </div>
             </div>
             <div className={styles.authorInfo}>
+              <h3>Jo Sheringham</h3>
               <img src={JoImg} alt="The author Jo Sheringham" />
               <div className={styles.authorInfo}>
-                <h3 className={styles.retelling}>
+                <h4 className={styles.retelling}>
                   Retelling old tales and discovering the delights of the
                   ordinary...
-                </h3>
+                </h4>
                 <Link to="/about">
                   <Button title="About the author" />
                 </Link>
@@ -64,6 +60,20 @@ const Home = () => {
               </p>
             </div>
             <div className={styles.workOrderReverse}>
+              <Link to="/tale-of-two-prophets">
+                <img
+                  src={TaleOfTwoProphets}
+                  alt="The book cover of A Tale of Two Prophets by Jo Sheringham"
+                />
+              </Link>
+              <p>
+                A vivid retelling of the lives of Old Testament prophets Elijah
+                and Elisha, blending familiar and lesser-known tales against a
+                backdrop of natural disasters, personal struggles, political
+                intrigue, and spiritual encounters.
+              </p>
+            </div>
+            <div className={styles.workOrderNormal}>
               <Link to="/daniel">
                 <img
                   src={DanielImg}
@@ -77,7 +87,7 @@ const Home = () => {
                 retelling of the Old Testament book of Daniel.
               </p>
             </div>
-            <div className={styles.workOrderNormal}>
+            <div className={styles.workOrderReverse}>
               {" "}
               <Link to="/from-inside">
                 <img
@@ -91,7 +101,7 @@ const Home = () => {
                 believe no one is listening.
               </p>
             </div>
-            <div className={styles.workOrderReverse}>
+            <div className={styles.workOrderNormal}>
               <Link to="/my-detective-darling">
                 <img
                   src={MyDetectiveDarlingImg}
