@@ -62,10 +62,10 @@ const TaleOfTwoProphets = () => {
       <div className={styles.videoParent}>
         <h2>Interview with Jo Sheringham: A Tale of Two Prophets</h2>
         <iframe
-          src="https://www.youtube.com/embed/2fkODh3Ozjk&ab"
+          src="https://www.youtube.com/embed/2fkODh3Ozjk?si=1iDq1wciFCwxuMhs"
           className={styles.iframe}
           onLoad={() => setLoading(false)}
-          title="Interview with Jo Sheringham about her book Jonah"
+          title="Jo Sheringham discusses her book A Tale of Two Prophets"
           allowFullScreen
           frameBorder="0"
         ></iframe>
