@@ -3,17 +3,3 @@
   width: 100vw;
   height: auto;
 }
-
-@media(min-width: 1023px) and (max-width: 1029px){
-  .App {
-    width: 100vw;
-    height: auto;
-  }
-}
-
-@media(min-width: 320px) and (max-width: 450px){ 
-  .App {
-    width: 100vw;
-    height: auto;
-  }
-}
