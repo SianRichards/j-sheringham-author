@@ -27,6 +27,10 @@ const Contact = () => {
 
   return (
     <article className={styles.main}>
+      <img
+        src={JoSheringham}
+        alt="The author Jo Sheringham at a book signing"
+      />
       <form
         onSubmit={submitForm}
         action="https://formspree.io/xqkdjopz"
@@ -57,10 +61,6 @@ const Contact = () => {
           )}
         </div>
       </form>
-      <img
-        src={JoSheringham}
-        alt="The author Jo Sheringham at a book signing"
-      />
     </article>
   );
 };
