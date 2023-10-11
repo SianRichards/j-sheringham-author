@@ -12,7 +12,6 @@ import TaleOfTwoProphets from "./tale-of-two-prophets";
 import Home from "./home";
 import AngelsDreamsAndProphecies from "./angels-dreams-and-prophecies";
 import PageNotFound from "./page-not-found";
-import StripeContainer from "../components/stripe-container";
 
 const Routes = () => {
   let pathname = useLocation().pathname;
@@ -35,7 +34,6 @@ const Routes = () => {
         <Route path="/jonah/*" element={<Jonah />} />
         <Route path="/tale-of-two-prophets/*" element={<TaleOfTwoProphets />} />
         <Route path="/contact/*" element={<Contact />} />
-        <Route path="/payment/*" element={<StripeContainer />} />
         <Route path="*" element={<PageNotFound />} />
       </RouteWrapper>
       <Footer />
