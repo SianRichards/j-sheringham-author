@@ -1,9 +1,5 @@
 import * as React from "react";
-import {
-  Route,
-  Routes as RouteWrapper,
-  useLocation,
-} from "react-router-dom";
+import { Route, Routes as RouteWrapper, useLocation } from "react-router-dom";
 import Daniel from "./daniel";
 import FromInside from "./from-inside";
 import MyDetectiveDarling from "./my-detective-darling";
@@ -15,6 +11,8 @@ import Footer from "../components/footer";
 import TaleOfTwoProphets from "./tale-of-two-prophets";
 import Home from "./home";
 import AngelsDreamsAndProphecies from "./angels-dreams-and-prophecies";
+import PageNotFound from "./page-not-found";
+import StripeContainer from "../components/stripe-container";
 
 const Routes = () => {
   let pathname = useLocation().pathname;
@@ -22,7 +20,7 @@ const Routes = () => {
     <div>
       <Header pathname={pathname} />
       <RouteWrapper>
-        <Route path="/*" element={<Home />} />
+        <Route path="" element={<Home />} />
         <Route path="/about/*" element={<About />} />
         <Route path="/daniel/*" element={<Daniel />} />
         <Route path="/from-inside/*" element={<FromInside />} />
@@ -35,11 +33,10 @@ const Routes = () => {
           element={<MyDetectiveDarling />}
         />
         <Route path="/jonah/*" element={<Jonah />} />
-        <Route
-          path="/tale-of-two-prophets/*"
-          element={<TaleOfTwoProphets />}
-        />
+        <Route path="/tale-of-two-prophets/*" element={<TaleOfTwoProphets />} />
         <Route path="/contact/*" element={<Contact />} />
+        <Route path="/payment/*" element={<StripeContainer />} />
+        <Route path="*" element={<PageNotFound />} />
       </RouteWrapper>
       <Footer />
     </div>
