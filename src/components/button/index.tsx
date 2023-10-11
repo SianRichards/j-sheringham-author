@@ -7,11 +7,10 @@ export interface IProps {
 }
 
 const Button = (props: IProps) => {
-  const { title, children } = props;
+  const { title } = props;
   return (
     <button className={styles.button}>
       {title}
-      {children}
     </button>
   );
 };
