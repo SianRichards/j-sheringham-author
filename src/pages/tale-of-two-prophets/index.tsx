@@ -41,7 +41,7 @@ const TaleOfTwoProphets = () => {
           atmospheric and imaginative retelling of the stories of Elijah and
           Elisha. And the Naaman retelling along with the Gehazi betrayal was
           one of my favourite parts."{" "}
-          <p className={styles.author}> - Bob Hartman, Author</p>
+          <span className={styles.author}> - Bob Hartman, Author</span>
         </p>
         <p>
           "Famously Cecil B DeMille said, “Give me any two pages of the Bible
@@ -54,9 +54,9 @@ const TaleOfTwoProphets = () => {
           never made it to the silver screen from the pages of the Bible, but
           opening these pages and you will find yourself thinking 'surely it is
           only a matter of time!'"{" "}
-          <p className={styles.author}>
+          <span className={styles.author}>
             - Luke Walton, Producer, Reel Issues Films
-          </p>
+          </span>
         </p>
       </div>
       <div className={styles.videoParent}>
