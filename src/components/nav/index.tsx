@@ -20,9 +20,9 @@ const Nav = (props: any) => {
           onClick={() => {
             setBarsClicked(false);
           }}
-          to="/"
+          to=""
           className={
-            pathname === "/home"
+            pathname === ""
               ? styles.clickedLink
               : styles.unclickedLink
           }
