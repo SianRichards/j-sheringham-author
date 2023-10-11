@@ -1,28 +1,35 @@
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import styles from "./contact.module.scss";
 import JoSheringham from "../../static/images/josheringham.jpg";
 import Button from "../../components/button";
 
 const Contact = () => {
   const [status, setStatus] = useState("");
-  const submitForm = (event: any) => {
-    console.log(event);
+
+  const submitForm = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = event.target;
+
+    const form = event.currentTarget;
     const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
         form.reset();
         setStatus("SUCCESS");
       } else {
         setStatus("ERROR");
       }
-    };
-    xhr.send(data);
+    } catch (error) {
+      setStatus("ERROR");
+    }
   };
 
   return (
