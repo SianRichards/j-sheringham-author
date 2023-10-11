@@ -34,7 +34,7 @@ const Routes = () => {
         <Route path="/jonah/*" element={<Jonah />} />
         <Route path="/tale-of-two-prophets/*" element={<TaleOfTwoProphets />} />
         <Route path="/contact/*" element={<Contact />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="/*" element={<PageNotFound />} />
       </RouteWrapper>
       <Footer />
     </div>
