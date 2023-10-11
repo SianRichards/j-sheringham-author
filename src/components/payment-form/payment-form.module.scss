@@ -1,0 +1,15 @@
+.payment {
+	min-height: 100vh;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid 1px black;
+	.paymentForm {
+		height: 500px;
+		width: 500px;
+		Button {
+			margin-top: 15px;
+		}
+	}
+}
