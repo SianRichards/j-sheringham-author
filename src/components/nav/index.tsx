@@ -22,12 +22,23 @@ const Nav = (props: any) => {
           }}
           to=""
           className={
-            pathname === ""
+            pathname === "" ? styles.clickedLink : styles.unclickedLink
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          onClick={() => {
+            setBarsClicked(false);
+          }}
+          to="/the-perfect-companion"
+          className={
+            pathname === "/the-perfect-companion"
               ? styles.clickedLink
               : styles.unclickedLink
           }
         >
-          Home
+          The Perfect Companion
         </NavLink>
         <NavLink
           onClick={() => {
@@ -61,9 +72,7 @@ const Nav = (props: any) => {
           }}
           to="/jonah"
           className={
-            pathname === "/jonah"
-              ? styles.clickedLink
-              : styles.unclickedLink
+            pathname === "/jonah" ? styles.clickedLink : styles.unclickedLink
           }
         >
           Jonah
@@ -74,9 +83,7 @@ const Nav = (props: any) => {
           }}
           to="/about"
           className={
-            pathname === "/about"
-              ? styles.clickedLink
-              : styles.unclickedLink
+            pathname === "/about" ? styles.clickedLink : styles.unclickedLink
           }
         >
           About
@@ -87,9 +94,7 @@ const Nav = (props: any) => {
           }}
           to="/daniel"
           className={
-            pathname === "/daniel"
-              ? styles.clickedLink
-              : styles.unclickedLink
+            pathname === "/daniel" ? styles.clickedLink : styles.unclickedLink
           }
         >
           Daniel
@@ -126,9 +131,7 @@ const Nav = (props: any) => {
           }}
           to="/contact"
           className={
-            pathname === "/contact"
-              ? styles.clickedLink
-              : styles.unclickedLink
+            pathname === "/contact" ? styles.clickedLink : styles.unclickedLink
           }
         >
           Contact

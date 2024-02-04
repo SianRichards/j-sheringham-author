@@ -12,6 +12,7 @@ import TaleOfTwoProphets from "./tale-of-two-prophets";
 import Home from "./home";
 import AngelsDreamsAndProphecies from "./angels-dreams-and-prophecies";
 import PageNotFound from "./page-not-found";
+import ThePerfectCompanion from "./the-perfect-companion";
 
 const Routes = () => {
   let pathname = useLocation().pathname;
@@ -32,6 +33,10 @@ const Routes = () => {
           element={<MyDetectiveDarling />}
         />
         <Route path="/jonah/*" element={<Jonah />} />
+        <Route
+          path="the-perfect-companion/*"
+          element={<ThePerfectCompanion />}
+        />
         <Route path="/tale-of-two-prophets/*" element={<TaleOfTwoProphets />} />
         <Route path="/contact/*" element={<Contact />} />
         <Route path="/*" element={<PageNotFound />} />

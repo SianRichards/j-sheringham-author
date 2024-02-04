@@ -7,6 +7,7 @@ import FromInsideImg from "../../static/images/fromInside.jpg";
 import MyDetectiveDarlingImg from "../../static/images/mydd.jpg";
 import TaleOfTwoProphets from "../../static/images/tale_of_two_prophets.jpg";
 import NewBook from "../../static/images/new_book_to_be_revealed.png";
+import ThePerfectCompanionImg from "../../static/images/the-perfect-companion.jpg";
 import { Link } from "react-router-dom";
 import Button from "../../components/button";
 
@@ -18,12 +19,15 @@ const Home = () => {
           <h1>What's new</h1>
           <div className={styles.homeSection}>
             <div className={styles.upcomingBook}>
-              <img src={NewBook} alt="New book to be released in 2024" />
+              <Link to="/the-perfect-companion">
+                <img
+                  src={ThePerfectCompanionImg}
+                  alt="Image of the cover of The Perfect Companion, by Jo Sheringham"
+                />
+              </Link>
               <div>
-                <h4>
-                  Watch this space for updates on my new novel to be released
-                  early 2024
-                </h4>
+                <h4>Latest release:</h4>
+                <h4>The Perfect Companion</h4>
               </div>
             </div>
             <div className={styles.authorInfo}>

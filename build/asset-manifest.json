@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b73bd57.css",
-    "main.js": "/static/js/main.af47d8aa.js",
+    "main.css": "/static/css/main.75e569bb.css",
+    "main.js": "/static/js/main.3c337b70.js",
     "static/media/ADP2.mp3": "/static/media/ADP2.2377883283cfbb685f37.mp3",
     "static/media/ADP3.mp3": "/static/media/ADP3.8f15766c48a521f77566.mp3",
     "static/media/ADP1.mp3": "/static/media/ADP1.ba47a26acb54746442ac.mp3",
@@ -15,6 +15,8 @@
     "static/media/ADP4.mp3": "/static/media/ADP4.77b8cf830098c3bf76af.mp3",
     "static/media/ADP9.mp3": "/static/media/ADP9.805a361cfab198dfc163.mp3",
     "static/media/books.png": "/static/media/books.b51ddaeb6ae942c4a52c.png",
+    "static/media/author_portrait.jpg": "/static/media/author_portrait.0e5208776a8577c60b77.jpg",
+    "static/media/new_book_to_be_revealed.png": "/static/media/new_book_to_be_revealed.a952bdc322fa3afeae36.png",
     "static/media/sanddunes.jpg": "/static/media/sanddunes.d79fc910163a03391d5f.jpg",
     "static/media/brickwall.jpg": "/static/media/brickwall.c0f857000093d6babcfe.jpg",
     "static/media/space.jpg": "/static/media/space.cf7e2eb9dbbafd1cccb1.jpg",
@@ -30,11 +32,11 @@
     "static/media/fromInside.jpg": "/static/media/fromInside.7bc32a84f99c7280524a.jpg",
     "static/media/jonah.jpg": "/static/media/jonah.92136d59487dee3e185f.jpg",
     "index.html": "/index.html",
-    "main.2b73bd57.css.map": "/static/css/main.2b73bd57.css.map",
-    "main.af47d8aa.js.map": "/static/js/main.af47d8aa.js.map"
+    "main.75e569bb.css.map": "/static/css/main.75e569bb.css.map",
+    "main.3c337b70.js.map": "/static/js/main.3c337b70.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b73bd57.css",
-    "static/js/main.af47d8aa.js"
+    "static/css/main.75e569bb.css",
+    "static/js/main.3c337b70.js"
   ]
 }

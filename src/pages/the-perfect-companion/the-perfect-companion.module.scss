@@ -1,0 +1,61 @@
+.thePerfectCompanion {
+  display: grid;
+  overflow-x: hidden;
+  justify-content: center;
+  border-bottom: solid 1px black;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../../static/images/landscape-tree.jpg") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .imageAndBlurb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    .imageAndButton {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      img {
+        height: 500px;
+        border: 1px solid black;
+        margin-bottom: 15px;
+      }
+    }
+    .description {
+      h1 {
+        margin: 0;
+      }
+      max-width: 500px;
+      font-size: 18px;
+      margin-left: 50px;
+      padding: 15px;
+      border: 1px solid black;
+      background-color: rgba(255, 255, 255, 0.456);
+      color: black;
+      margin-right: 25px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1060px) {
+  .thePerfectCompanion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .imageAndBlurb {
+      flex-direction: column-reverse !important;
+      margin: 0px;
+      .description {
+        font-size: 18px !important;
+        margin: 15px;
+      }
+    }
+  }
+}
