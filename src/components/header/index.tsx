@@ -7,6 +7,7 @@ import {
   faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "react-bootstrap";
 
 interface IProps {
   pathname: any;

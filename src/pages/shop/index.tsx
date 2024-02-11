@@ -1,21 +1,27 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+import React, { useState } from "react";
 import { bookItems } from "./books";
-import ShopItem from "../../components/shop-item";
+import styles from "./shop.module.scss";
+import BookItem from "../../components/bookItem";
+import Button from "../../components/button";
+import CheckoutForm from "../../components/payment-form";
 
 const Shop = () => {
+  const [showPaymentForm, setShowPaymentForm] = useState(false);
   return (
-    <div className="">
-      <h1>Bookshop</h1>
-      <Row md={2} xs={1} lg={3} className="g-3">
-        {bookItems.map((item: any) => {
-          return (
-            <Col key={item.id}>
-              <ShopItem item={item} />
-            </Col>
-          );
+    <div className={styles.bookShop}>
+      <h1>Book Shop</h1>
+      <div className={styles.cardsContainer}>
+        {bookItems.map((bookitem) => {
+          return <BookItem key={bookitem.id} {...bookitem} />;
         })}
-      </Row>
+      </div>
+      <div>
+        <Button
+          title="Checkout"
+          onClickFunction={() => setShowPaymentForm(true)}
+        />
+      </div>
+      {showPaymentForm && <CheckoutForm />}
     </div>
   );
 };
