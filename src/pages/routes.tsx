@@ -13,6 +13,7 @@ import Home from "./home";
 import AngelsDreamsAndProphecies from "./angels-dreams-and-prophecies";
 import PageNotFound from "./page-not-found";
 import ThePerfectCompanion from "./the-perfect-companion";
+import Shop from "./shop";
 
 const Routes = () => {
   let pathname = useLocation().pathname;
@@ -39,6 +40,7 @@ const Routes = () => {
         />
         <Route path="/tale-of-two-prophets/*" element={<TaleOfTwoProphets />} />
         <Route path="/contact/*" element={<Contact />} />
+        <Route path="/shop/*" element={<Shop />} />
         <Route path="/*" element={<PageNotFound />} />
       </RouteWrapper>
       <Footer />
