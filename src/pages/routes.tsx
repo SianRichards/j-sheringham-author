@@ -40,8 +40,9 @@ const Routes = () => {
         />
         <Route path="/tale-of-two-prophets/*" element={<TaleOfTwoProphets />} />
         <Route path="/contact/*" element={<Contact />} />
-        <Route path="/shop/*" element={<Shop />} />
+        {/* <Route path="/shop/*" element={<Shop />} /> */}
         <Route path="/*" element={<PageNotFound />} />
+        {/* <Route path="/checkout/*" element={<CheckoutPage />} /> */}
       </RouteWrapper>
       <Footer />
     </div>

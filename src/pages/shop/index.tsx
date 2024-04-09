@@ -7,12 +7,14 @@ import CheckoutForm from "../../components/payment-form";
 
 const Shop = () => {
   const [showPaymentForm, setShowPaymentForm] = useState(false);
+  const [items, setItems] = useState(bookItems);
+
   return (
     <div className={styles.bookShop}>
       <h1>Book Shop</h1>
       <div className={styles.cardsContainer}>
-        {bookItems.map((bookitem) => {
-          return <BookItem key={bookitem.id} {...bookitem} />;
+        {items.map((item) => {
+          return <BookItem key={item.id} {...item} setItems={setItems} />;
         })}
       </div>
       <div>
@@ -21,7 +23,7 @@ const Shop = () => {
           onClickFunction={() => setShowPaymentForm(true)}
         />
       </div>
-      {showPaymentForm && <CheckoutForm />}
+      {showPaymentForm && <CheckoutForm cart={items} />}
     </div>
   );
 };

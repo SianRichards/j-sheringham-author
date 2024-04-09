@@ -8,17 +8,20 @@ export const bookItems = [
     name: "Jonah",
     price: 5.99,
     imgUrl: JonahImage,
+    quantity: 0,
   },
   {
     id: 2,
     name: "A Tale of Two Prophets",
-    price: 12.60,
+    price: 12.6,
     imgUrl: TaleOfTwoProphetsImage,
+    quantity: 0,
   },
   {
     id: 3,
     name: "The Perfect Companion",
     price: 11.99,
     imgUrl: ThePerfectCompanionImage,
+    quantity: 0,
   },
 ];
