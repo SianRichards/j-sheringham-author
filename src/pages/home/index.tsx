@@ -19,6 +19,10 @@ const Home = () => {
           <h1>What's new</h1>
           <div className={styles.homeSection}>
             <div className={styles.upcomingBook}>
+              <div>
+                <h4>Latest release:</h4>
+                <h4>The Perfect Companion</h4>
+              </div>
               <Link to="/the-perfect-companion">
                 <img
                   src={ThePerfectCompanionImg}
@@ -26,8 +30,20 @@ const Home = () => {
                 />
               </Link>
               <div>
-                <h4>Latest release:</h4>
-                <h4>The Perfect Companion</h4>
+                <a
+                  href="https://www.amazon.co.uk/Perfect-Companion-Jo-Sheringham-ebook/dp/B0CQV1256V/ref=sr_1_1?crid=17AMQKLNCB4O3&dib=eyJ2IjoiMSJ9.8wV8blDzmMe2CYoJfFukMa-9YHTojLy_VFtzBzOTlJQUaWdTM6o1lZZBIcuMG5GYEegrSkz3eFxhbjfAii8GMpqqtljViBQ_0RLJ_JuBZaLvYbbPJXquKtleeha6dR2uVKNKx0jXQ9iiVpjWf_vzfOhK1uB83vnHCuN5oeUCVu9jbyQjNLd2AXvx1OX4SWUlNaIyjS6iIcqFBVAAjSyLeIQ81HlQ0Teu1Sl7H0LHOsc.7NPWZuDY7QAp1V5osY2zGpTiI_M2he5e4zekNjyT5tA&dib_tag=se&keywords=the+perfect+companion&qid=1712696878&sprefix=the+perfect+companin%2Caps%2C114&sr=8-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button title="Browse here" />
+                </a>
+                <div className={styles.request}>
+                  <p>or</p>
+                  <p>
+                    Fill out the <Link to="/contact">contact form</Link> to
+                    request a signed copy - happy reading!
+                  </p>
+                </div>
               </div>
             </div>
             <div className={styles.authorInfo}>

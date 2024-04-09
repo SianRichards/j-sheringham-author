@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import styles from "./the-perfect-companion.module.scss";
 import Button from "../../components/button";
 import ThePerfectCompanionImg from "../../static/images/the-perfect-companion.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const ThePerfectCompanion = () => {
-  const [loading, setLoadingValue] = useState(true);
   return (
     <article className={styles.thePerfectCompanion}>
       <div className={styles.imageAndBlurb}>
@@ -37,11 +35,20 @@ const ThePerfectCompanion = () => {
             src={ThePerfectCompanionImg}
             alt="The book cover of Jonah by Jo Sheringham"
           />
-          <a
-            href="https://www.biblesociety.org.uk/products/jonah-and-the-bony-finned-asteroid-fish/"
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
+          <div>
+            <a
+              href="https://www.amazon.co.uk/Perfect-Companion-Jo-Sheringham-ebook/dp/B0CQV1256V/ref=sr_1_1?crid=17AMQKLNCB4O3&dib=eyJ2IjoiMSJ9.8wV8blDzmMe2CYoJfFukMa-9YHTojLy_VFtzBzOTlJQUaWdTM6o1lZZBIcuMG5GYEegrSkz3eFxhbjfAii8GMpqqtljViBQ_0RLJ_JuBZaLvYbbPJXquKtleeha6dR2uVKNKx0jXQ9iiVpjWf_vzfOhK1uB83vnHCuN5oeUCVu9jbyQjNLd2AXvx1OX4SWUlNaIyjS6iIcqFBVAAjSyLeIQ81HlQ0Teu1Sl7H0LHOsc.7NPWZuDY7QAp1V5osY2zGpTiI_M2he5e4zekNjyT5tA&dib_tag=se&keywords=the+perfect+companion&qid=1712696878&sprefix=the+perfect+companin%2Caps%2C114&sr=8-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button title="Browse Here" />
+            </a>
+            <p>or</p>
+            <p>
+              Fill out the <Link to="/contact">contact form</Link> to request a
+              signed copy - happy reading!
+            </p>
+          </div>
         </div>
       </div>
     </article>
