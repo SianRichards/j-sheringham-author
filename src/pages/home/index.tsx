@@ -6,8 +6,7 @@ import DanielImg from "../../static/images/daniel.jpg";
 import FromInsideImg from "../../static/images/fromInside.jpg";
 import MyDetectiveDarlingImg from "../../static/images/mydd.jpg";
 import TaleOfTwoProphets from "../../static/images/tale_of_two_prophets.jpg";
-import NewBook from "../../static/images/new_book_to_be_revealed.png";
-import ThePerfectCompanionImg from "../../static/images/the-perfect-companion.jpg";
+import ThePerfectCompanionImg from "../../static/images/the-perfect-companion-nominated.png";
 import { Link } from "react-router-dom";
 import Button from "../../components/button";
 
